@@ -1,5 +1,54 @@
 {
-  "generated_at": null,
-  "venues": [],
+  "generated_at": "2026-10-13T16:52:20+00:00",
+  "venues": [
+    {
+      "id": "residenztheater",
+      "name": "Residenztheater",
+      "category": "theatre",
+      "color": "#7a1f2b"
+    },
+    {
+      "id": "kammerspiele",
+      "name": "Münchner Kammerspiele",
+      "category": "theatre",
+      "color": "#2b4c7e"
+    },
+    {
+      "id": "volkstheater",
+      "name": "Münchner Volkstheater",
+      "category": "theatre",
+      "color": "#b5651d"
+    },
+    {
+      "id": "deutsches-theater",
+      "name": "Deutsches Theater",
+      "category": "theatre",
+      "color": "#8b2c5c"
+    },
+    {
+      "id": "isarphilharmonie",
+      "name": "Isarphilharmonie",
+      "category": "concert",
+      "color": "#1e6b5c"
+    },
+    {
+      "id": "bayerische-staatsoper",
+      "name": "Bayerische Staatsoper",
+      "category": "opera",
+      "color": "#6b4a1e"
+    },
+    {
+      "id": "museum-lichtspiele",
+      "name": "Museum Lichtspiele",
+      "category": "cinema",
+      "color": "#4a3f8a"
+    },
+    {
+      "id": "city-kino-atelier",
+      "name": "City Kino Atelier",
+      "category": "cinema",
+      "color": "#2e7d32"
+    }
+  ],
   "events": []
 }
