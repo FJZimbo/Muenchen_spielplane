@@ -2,52 +2,65 @@
 <html lang="de">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>München Spielplan</title>
-  <meta name="description" content="Spielplan von Theater, Oper, Konzert und Kino in München an einem Ort.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Münchner Spielplan</title>
+  <meta name="description" content="Theater, Oper, Konzert und Kino in München: alle Termine an einem Ort, täglich aktualisiert.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Instrument+Sans:wght@400..700&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap header-row">
-      <a class="brand" href="#top">München <span>Spielplan</span></a>
-      <div class="header-actions">
-        <button id="lang" class="pill" type="button" aria-label="Sprache wechseln">EN</button>
-        <span id="updated" class="muted small"></span>
+<!-- BODY:START -->
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="#top" id="top">
+      <span class="brand-name">München <span>Spielplan</span></span>
+      <span class="brand-sub" id="brand-sub">Theater · Oper · Konzert · Kino in München</span>
+    </a>
+    <div class="mast-right">
+      <span class="updated" id="updated"></span>
+      <div class="lang" role="group" aria-label="Sprache / Language">
+        <button type="button" data-lang="de" aria-pressed="true">DE</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
       </div>
     </div>
-  </header>
+  </div>
+</header>
 
-  <nav class="filters wrap" aria-label="Filter">
-    <div class="filter-row">
-      <button id="today" class="pill pill-strong" type="button"></button>
-      <label class="select-wrap">
-        <span class="sr-only">Ort</span>
-        <select id="venue"></select>
+<div class="bar">
+  <div class="wrap">
+    <div class="row">
+      <label class="search" for="q">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="q" type="search" autocomplete="off">
       </label>
-      <label class="select-wrap">
-        <span class="sr-only">Kategorie</span>
-        <select id="category"></select>
-      </label>
-      <label class="select-wrap">
-        <span class="sr-only">Datum</span>
-        <input id="date" type="date">
-      </label>
+      <button class="toggle" id="today" type="button" aria-pressed="false">Heute</button>
+      <button class="toggle" id="available" type="button" aria-pressed="false">Nur mit Karten</button>
+      <input class="date-jump" id="date" type="date">
+      <button class="chip filter-toggle" id="filter-toggle" type="button" aria-expanded="false" aria-controls="more-filters">Filter</button>
     </div>
-    <div id="venue-bubbles" class="bubbles" aria-label="Orte"></div>
-    <div id="category-bubbles" class="bubbles" aria-label="Kategorien"></div>
-    <div id="day-strip" class="day-strip" aria-label="Tage springen"></div>
-  </nav>
+    <div class="more-filters" id="more-filters">
+      <div class="row"><div class="chips" id="cats" aria-label="Kategorie"></div><button class="clear" id="clear" type="button">Zurücksetzen</button></div>
+      <div class="chips" id="venues" aria-label="Häuser"></div>
+    </div>
+    <nav class="strip" id="strip" aria-label="Tage"></nav>
+  </div>
+</div>
 
-  <main id="top" class="wrap">
-    <p id="status" class="status" role="status"></p>
-    <div id="program"></div>
-  </main>
+<main class="wrap">
+  <p class="status-msg" id="status-msg" role="status"></p>
+  <div id="programme"></div>
+</main>
 
-  <footer class="site-footer wrap muted small">
-    <p id="footer-note"></p>
-  </footer>
-
-  <script src="app.js" defer></script>
+<footer>
+  <div class="wrap">
+    <h2 class="sources-h" id="sources-h">Quellen</h2>
+    <div class="sources" id="sources"></div>
+    <p class="fine" id="fine"></p>
+  </div>
+</footer>
+<!-- BODY:END -->
+<script src="app.js" defer></script>
 </body>
 </html>

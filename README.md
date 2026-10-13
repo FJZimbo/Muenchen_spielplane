@@ -1,60 +1,65 @@
 # München Spielplan
 
-A static page listing theatre, opera, concert and cinema programmes for Munich in one place.
-It reads `data/events.json`, which a scraper refreshes every day.
+Theatre, opera, concerts and cinema in Munich on one page, refreshed every day.
 
-## What's included
+| Category | Venues |
+| --- | --- |
+| Theatre | Residenztheater · Münchner Kammerspiele · Münchner Volkstheater · Deutsches Theater |
+| Concert | Isarphilharmonie (calendar on gasteig.de) |
+| Opera | Bayerische Staatsoper |
+| Cinema | Museum Lichtspiele · City Kinos & Atelier (all screenings) |
 
-- **Theatre:** Residenztheater, Münchner Kammerspiele, Münchner Volkstheater, Deutsches Theater
-- **Concert:** Isarphilharmonie
-- **Opera:** Bayerische Staatsoper
-- **Cinema:** Museum Lichtspiele, City Kino Atelier (all screenings)
+## How it works
 
-## Hosting (free, GitHub Pages)
+A GitHub Action opens each venue's programme in a headless Chrome browser every morning. It clicks
+"Mehr laden", the "next month" buttons and the cinema day tabs, reads every performance and writes
+`data/events.json`. The site (`index.html`, `app.js`, `style.css`) just displays that file.
 
-1. Create a new GitHub repository and push this folder to it.
-2. In the repository, go to **Settings → Pages**, choose *Deploy from a branch*, select `main` and `/ (root)`.
-3. Go to **Actions**, open *Update programme* and click **Run workflow** once to fill the data.
-4. The site is then live at `https://<your-user>.github.io/<repo>/` and refreshes daily at about 06:15 Berlin time.
+- Sold out, few tickets and cancelled are read from each listing.
+- Deutsches Theater lists runs ("07.10. bis 08.11.26") plus weekly times, not single dates. Its dates are
+  derived from that and marked on the card. Its ticket shop blocks automated access, so availability is not shown.
+- If a venue returns nothing on a given day, its previous dates are kept and the footer marks the source.
+- The scraper respects each site's robots.txt and pauses between pages.
 
-## Before the first run: check the scraper
+## Updating an existing repository (from version 1)
 
-The venue URLs and the parsing logic in `scripts/scrape.py` are a starting point and have **not yet been
-verified against the live websites**. Please:
+1. **Delete the old files** in the repository: `app.js`, `index.html`, `style.css`, `requirements.txt`,
+   `scripts/scrape.py`, `data/events.json`, and the stray file named `Update` if it's still there.
+2. **Upload the new files**: drag everything from the unzipped folder *except* `.github` onto the
+   repository page (**Add file → Upload files**), then commit.
+3. **Replace the workflow**: open `.github/workflows/update.yml` on GitHub, click the pencil icon, select all,
+   paste the contents of the new `update.yml` (open it in TextEdit; press Cmd+Shift+. in Finder to see the
+   hidden `.github` folder), and commit.
+4. **Run it**: Actions → *Update programme* → **Run workflow** (leave "debug" ticked). A full run takes about
+   10–20 minutes.
+5. Open your site. The footer lists how many events each source returned.
 
-1. Open each URL in `VENUES` and confirm it shows the programme. Correct any that have moved.
-2. Run `python scripts/scrape.py` locally. It prints how many events it found per venue.
-3. For any venue that returns 0 events, look at the page source. If the page has no schema.org `Event`
-   data, add CSS selectors to `SELECTORS` in the script.
-4. Check each venue's terms of use. Some sites restrict automated access. If one does, drop it from
-   `VENUES` or ask the venue for a feed or a list you can paste in.
+## When a venue shows "keine Daten"
 
-The scraper keeps the previous data if a run finds nothing, so a broken site won't empty the page.
+Websites change. Every manual run with "debug" ticked saves what the browser saw to the `debug/` folder.
+Download the repository (**Code → Download ZIP**) and send the `debug` folder, together with the
+"Scrape venues" log from the Actions run. The parser for that venue can then be fixed against the real page.
+Venue URLs and link patterns live in `scripts/venues.py`.
 
 ## Running locally
 
 ```bash
 pip install -r requirements.txt
-python scripts/scrape.py
-python -m http.server 8000     # then open http://localhost:8000
+python -m playwright install chromium
+python tests/test_extract.py                 # offline parser tests
+python scripts/scrape.py --debug             # all venues (or: --only kammerspiele)
+python -m http.server 8000                   # open http://localhost:8000
 ```
-
-Opening `index.html` directly from disk won't load the data, because browsers block `fetch` for local files.
-Use the local server above.
-
-## Features
-
-- Cards per event with image, time, venue, category, duration, price and a "sold out" badge
-- Venue and category bubbles, plus dropdowns
-- "Heute / Today" toggle and a day strip to jump to any date
-- Month headings, as on the Berlin site
-- German / English interface. Event titles are never translated.
 
 ## Files
 
 | Path | Purpose |
 | --- | --- |
 | `index.html`, `style.css`, `app.js` | The site |
-| `data/events.json` | Programme data (written by the scraper) |
-| `scripts/scrape.py` | Scraper and venue list |
-| `.github/workflows/update.yml` | Daily automatic update |
+| `data/events.json` | All events (written by the scraper) |
+| `data/status.json` | Per-venue result of the last run |
+| `scripts/venues.py` | Venue list: URLs, link patterns, stages, genres |
+| `scripts/extract.py` | Parsing (no network; tested by `tests/test_extract.py`) |
+| `scripts/scrape.py` | Browser automation and output |
+| `scripts/build_preview.py` | Builds a single-file preview with sample data |
+| `.github/workflows/update.yml` | Daily run |

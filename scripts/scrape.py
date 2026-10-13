@@ -1,233 +1,527 @@
 #!/usr/bin/env python3
-"""Collect Munich theatre, concert, opera and cinema programmes into data/events.json.
+"""Collect the Munich programme into data/events.json using a headless browser.
 
-Per venue, the scraper:
-  1. fetches the listing page(s) listed in VENUES,
-  2. reads schema.org "Event" JSON-LD (most ticketing sites embed it),
-  3. falls back to CSS selectors in the venue's "selectors" entry, if one is given.
+    python scripts/scrape.py                 # all venues
+    python scripts/scrape.py --only kammerspiele --debug
 
-A failing venue is logged and skipped; the others are still written.
-Run locally:  python scripts/scrape.py
+--debug saves the rendered HTML of each page to debug/ so parsers can be fixed offline.
+A venue that yields nothing keeps its previous (future) events and is flagged in data/status.json.
 """
 
 from __future__ import annotations
 
-import hashlib
+import argparse
 import json
 import re
 import sys
-from datetime import datetime, timedelta, timezone
+import time as systime
+import traceback
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
-from urllib.parse import urljoin
-from zoneinfo import ZoneInfo
+from urllib.parse import urljoin, urlparse
+from urllib.robotparser import RobotFileParser
 
-import requests
-from bs4 import BeautifulSoup
+from playwright.sync_api import TimeoutError as PWTimeout
+from playwright.sync_api import sync_playwright
 
-BERLIN = ZoneInfo("Europe/Berlin")
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from extract import (BERLIN, embedded_json, extract_cards, extract_screenings, harvest_json,  # noqa: E402
+                     make_soup, merge_events, parse_day_label, parse_schedule_page, find_dates)
+from venues import VENUES  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / "data" / "events.json"
-HEADERS = {
-    "User-Agent": "muenchen-spielplan/1.0 (personal programme overview; contact: site owner)",
-    "Accept-Language": "de-DE,de;q=0.9,en;q=0.5",
+DATA = ROOT / "data"
+DEBUG = ROOT / "debug"
+EVENTS_FILE = DATA / "events.json"
+STATUS_FILE = DATA / "status.json"
+META_CACHE = DATA / "meta_cache.json"
+HORIZON_DAYS = 400
+USER_AGENT = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) "
+              "Chrome/124.0 Safari/537.36 muenchen-spielplan/2.0")
+ROBOTS_UA = "muenchen-spielplan"
+PAUSE = 0.8  # seconds between page loads, to be polite
+
+CONSENT_JS = r"""
+() => {
+  const rx = /^(alle akzeptieren|alle cookies akzeptieren|akzeptieren|accept all|accept|zustimmen|alle zulassen|einverstanden|ok|verstanden|allow all|annehmen|alle annehmen)$/i;
+  for (const el of document.querySelectorAll('button, a, [role=button], input[type=button], input[type=submit]')) {
+    const t = (el.innerText || el.value || '').trim();
+    if (rx.test(t) && el.offsetParent !== null) { el.click(); return t; }
+  }
+  return null;
 }
-HORIZON_DAYS = 365  # keep events up to one year ahead
+"""
 
-# NOTE: all URLs below are unverified starting points. Check each one in a
-# browser before the first run and fix it if the site has moved.
-VENUES = [
-    {"id": "residenztheater", "name": "Residenztheater", "category": "theatre",
-     "color": "#7a1f2b", "urls": ["https://www.residenztheater.de/spielplan"]},
-    {"id": "kammerspiele", "name": "Münchner Kammerspiele", "category": "theatre",
-     "color": "#2b4c7e", "urls": ["https://www.muenchner-kammerspiele.de/spielplan"]},
-    {"id": "volkstheater", "name": "Münchner Volkstheater", "category": "theatre",
-     "color": "#b5651d", "urls": ["https://www.muenchner-volkstheater.de/spielplan"]},
-    {"id": "deutsches-theater", "name": "Deutsches Theater", "category": "theatre",
-     "color": "#8b2c5c", "urls": ["https://www.deutschestheater.de/spielplan"]},
-    {"id": "isarphilharmonie", "name": "Isarphilharmonie", "category": "concert",
-     "color": "#1e6b5c", "urls": ["https://www.isarphilharmonie.de/"]},
-    {"id": "bayerische-staatsoper", "name": "Bayerische Staatsoper", "category": "opera",
-     "color": "#6b4a1e", "urls": ["https://www.staatsoper.de/spielplan"]},
-    {"id": "museum-lichtspiele", "name": "Museum Lichtspiele", "category": "cinema",
-     "color": "#4a3f8a", "urls": ["https://www.museum-lichtspiele.de/programm"]},
-    {"id": "city-kino-atelier", "name": "City Kino Atelier", "category": "cinema",
-     "color": "#2e7d32", "urls": ["https://www.citykinoatelier.de/programm"]},
-]
-# Optional CSS fallback, used only when a page has no JSON-LD events.
-# Example: {"item": ".event", "title": "h3", "start": "time[datetime]", "link": "a[href]"}
-SELECTORS: dict[str, dict] = {}
+CLICK_TEXT_JS = r"""
+(pattern) => {
+  const rx = new RegExp(pattern, 'i');
+  const els = [...document.querySelectorAll('button, a, [role=button], [role=link], span, div')]
+    .filter(el => el.offsetParent !== null && !el.disabled && el.getAttribute('aria-disabled') !== 'true');
+  const parts = el => [el.getAttribute('aria-label'), el.getAttribute('title'), el.innerText]
+    .filter(Boolean).map(p => p.replace(/\s+/g, ' ').trim());
+  const hit = el => parts(el).some(p => rx.test(p));
+  for (const el of els) {
+    if (!hit(el)) continue;
+    // prefer the innermost clickable element
+    if ([...el.querySelectorAll('button, a, [role=button]')].some(hit)) continue;
+    if ((el.innerText || '').length > 60) continue;
+    el.scrollIntoView({block: 'center'});
+    el.click();
+    return parts(el).join(' | ').slice(0, 80) || 'clicked';
+  }
+  return null;
+}
+"""
 
-
-def fetch(url: str) -> BeautifulSoup | None:
-    try:
-        r = requests.get(url, headers=HEADERS, timeout=30)
-        r.raise_for_status()
-        return BeautifulSoup(r.text, "html.parser")
-    except requests.RequestException as exc:
-        print(f"  ! {url}: {exc}", file=sys.stderr)
-        return None
-
-
-def parse_dt(value: str | None) -> datetime | None:
-    if not value:
-        return None
-    try:
-        dt = datetime.fromisoformat(value.replace("Z", "+00:00"))
-    except ValueError:
-        return None
-    if dt.tzinfo is None:
-        dt = dt.replace(tzinfo=BERLIN)
-    return dt.astimezone(BERLIN)
+MARK_TABS_JS = r"""
+() => {
+  const rx = /^(heute|morgen|today|tomorrow|mo|di|mi|do|fr|sa|so|mon|tue|wed|thu|fri|sat|sun)\.?,?\s*(\d{1,2}\.\s*\d{1,2}\.?|\d{1,2}\.?\s*[a-zä]{3,9}\.?)?$/i;
+  const out = [];
+  const cands = [...document.querySelectorAll('button, a, [role=tab], li, label, div, span')];
+  for (const el of cands) {
+    const t = (el.innerText || '').replace(/\s+/g, ' ').trim();
+    if (!t || t.length > 24 || !rx.test(t)) continue;
+    if (!/\d/.test(t) && !/^(heute|morgen|today|tomorrow)$/i.test(t)) continue;
+    // innermost match only
+    if ([...el.children].some(c => rx.test((c.innerText || '').replace(/\s+/g, ' ').trim()))) continue;
+    out.push(el);
+  }
+  // keep only one element per label (the first)
+  const seen = new Set();
+  const uniq = out.filter(el => { const t = el.innerText.replace(/\s+/g,' ').trim(); if (seen.has(t)) return false; seen.add(t); return true; });
+  uniq.forEach((el, i) => el.setAttribute('data-msp-tab', String(i)));
+  return uniq.map(el => el.innerText.replace(/\s+/g, ' ').trim());
+}
+"""
 
 
-def walk_jsonld(node):
-    """Yield every dict in a JSON-LD structure."""
-    if isinstance(node, dict):
-        yield node
-        for v in node.values():
-            yield from walk_jsonld(v)
-    elif isinstance(node, list):
-        for v in node:
-            yield from walk_jsonld(v)
+# --------------------------------------------------------------------------- helpers
 
 
-def is_sold_out(event: dict) -> bool:
-    offers = event.get("offers") or []
-    if isinstance(offers, dict):
-        offers = [offers]
-    return any("SoldOut" in str(o.get("availability", "")) for o in offers if isinstance(o, dict))
+class Robots:
+    def __init__(self, request):
+        self.request = request
+        self.cache: dict[str, RobotFileParser | None] = {}
 
-
-def price_from(event: dict) -> str | None:
-    offers = event.get("offers") or []
-    if isinstance(offers, dict):
-        offers = [offers]
-    prices = []
-    for o in offers:
-        if isinstance(o, dict) and o.get("price") not in (None, ""):
+    def allowed(self, url: str) -> bool:
+        host = urlparse(url)
+        base = f"{host.scheme}://{host.netloc}"
+        if base not in self.cache:
+            rp = RobotFileParser()
             try:
-                prices.append(float(str(o["price"]).replace(",", ".")))
-            except ValueError:
-                pass
-    return f"ab {min(prices):.0f} €" if prices else None
+                r = self.request.get(base + "/robots.txt", timeout=15000)
+                if r.ok:
+                    rp.parse(r.text().splitlines())
+                    self.cache[base] = rp
+                else:
+                    self.cache[base] = None  # no robots.txt -> allowed
+            except Exception:
+                self.cache[base] = None
+        rp = self.cache[base]
+        return True if rp is None else rp.can_fetch(ROBOTS_UA, url)
 
 
-def events_from_jsonld(soup: BeautifulSoup, page_url: str, venue: dict) -> list[dict]:
-    found = []
-    for script in soup.find_all("script", type="application/ld+json"):
-        try:
-            data = json.loads(script.string or "")
-        except json.JSONDecodeError:
-            continue
-        for node in walk_jsonld(data):
-            types = node.get("@type", [])
-            types = [types] if isinstance(types, str) else types
-            if "Event" not in types and "ScreeningEvent" not in types and "TheaterEvent" not in types:
+def settle(page, ms: int = 1500):
+    try:
+        page.wait_for_load_state("networkidle", timeout=ms + 6000)
+    except PWTimeout:
+        pass
+    page.wait_for_timeout(ms // 3)
+
+
+def scroll_through(page, steps: int = 12):
+    last = 0
+    for _ in range(steps):
+        h = page.evaluate("() => { window.scrollBy(0, window.innerHeight * 1.5); return document.body.scrollHeight; }")
+        page.wait_for_timeout(250)
+        at_bottom = page.evaluate("() => window.innerHeight + window.scrollY >= document.body.scrollHeight - 5")
+        if at_bottom and h == last:
+            break
+        last = h
+    page.evaluate("() => window.scrollTo(0, 0)")
+
+
+def accept_consent(page):
+    try:
+        if page.evaluate(CONSENT_JS):
+            page.wait_for_timeout(600)
+    except Exception:
+        pass
+
+
+class Session:
+    """One browser page with JSON-response capture."""
+
+    def __init__(self, context):
+        self.page = context.new_page()
+        self.responses = []
+        self.page.on("response", self._on_response)
+
+    def _on_response(self, resp):
+        ct = (resp.headers.get("content-type") or "").lower()
+        if "json" in ct and not re.search(r"google|analytics|facebook|hotjar|matomo|cookie|consent|sentry|gtm", resp.url):
+            self.responses.append(resp)
+
+    def drain_json(self) -> list[tuple[str, object]]:
+        out = []
+        for r in self.responses:
+            try:
+                body = r.text()
+                if len(body) > 8_000_000:
+                    continue
+                out.append((r.url, json.loads(body)))
+            except Exception:
                 continue
-            start = parse_dt(node.get("startDate"))
-            if not start or not node.get("name"):
-                continue
-            image = node.get("image")
-            if isinstance(image, list):
-                image = image[0] if image else None
-            if isinstance(image, dict):
-                image = image.get("url")
-            url = node.get("url") or page_url
-            found.append({
-                "venue_id": venue["id"],
-                "title": str(node["name"]).strip(),
-                "start": start.isoformat(),
-                "category": venue["category"],
-                "description": re.sub(r"\s+", " ", str(node.get("description") or "")).strip()[:400],
-                "image": urljoin(page_url, image) if image else None,
-                "url": urljoin(page_url, url),
-                "sold_out": is_sold_out(node),
-                "price": price_from(node),
-            })
-    return found
+        self.responses = []
+        return out
+
+    def goto(self, url: str):
+        resp = self.page.goto(url, wait_until="domcontentloaded", timeout=45000)
+        settle(self.page)
+        accept_consent(self.page)
+        return resp.status if resp else None
+
+    def html(self) -> str:
+        return self.page.content()
 
 
-def events_from_selectors(soup: BeautifulSoup, page_url: str, venue: dict) -> list[dict]:
-    sel = SELECTORS.get(venue["id"])
-    if not sel:
-        return []
-    found = []
-    for item in soup.select(sel["item"]):
-        title_el = item.select_one(sel["title"])
-        time_el = item.select_one(sel["start"])
-        link_el = item.select_one(sel.get("link", "a[href]"))
-        if not (title_el and time_el):
-            continue
-        raw = time_el.get("datetime") or time_el.get_text(strip=True)
-        start = parse_dt(raw)
-        if not start:
-            continue
-        found.append({
-            "venue_id": venue["id"],
-            "title": title_el.get_text(" ", strip=True),
-            "start": start.isoformat(),
-            "category": venue["category"],
-            "description": "",
-            "image": None,
-            "url": urljoin(page_url, link_el["href"]) if link_el else page_url,
-            "sold_out": "ausverkauft" in item.get_text(" ", strip=True).lower(),
-            "price": None,
-        })
-    return found
+def save_debug(name: str, html: str):
+    DEBUG.mkdir(exist_ok=True)
+    # Drop bulky script/style bodies but keep JSON-LD / __NEXT_DATA__
+    html = re.sub(r"<script(?![^>]*(ld\+json|__NEXT_DATA__|application/json))[^>]*>.*?</script>", "<script></script>",
+                  html, flags=re.S | re.I)
+    html = re.sub(r"<style[^>]*>.*?</style>", "<style></style>", html, flags=re.S | re.I)
+    (DEBUG / f"{name}.html").write_text(html[:3_000_000], encoding="utf-8")
 
 
-def scrape_venue(venue: dict) -> list[dict]:
+# --------------------------------------------------------------------------- page collection
+
+
+def collect_snapshots(sess: Session, venue: dict, url: str, report: dict, debug: bool, idx: int):
+    """Open url, run the venue's actions, return [(html, page_url, context_date)] and captured JSON."""
+    today = datetime.now(BERLIN).date()
+    snaps: list[tuple[str, str, date | None]] = []
+    status = sess.goto(url)
+    page_info = {"url": url, "http": status, "snapshots": 0, "actions": []}
+    report["pages"].append(page_info)
+    if status and status >= 400:
+        report["errors"].append(f"HTTP {status} for {url}")
+        return snaps, sess.drain_json()
+
+    actions = venue.get("actions", [])
+    scroll_through(sess.page)
+    snaps.append((sess.html(), sess.page.url, None))
+
+    for act in actions:
+        if "load_more" in act:
+            clicks = 0
+            for _ in range(act["load_more"]):
+                before = len(sess.html())
+                label = sess.page.evaluate(CLICK_TEXT_JS, r"^(mehr laden|mehr anzeigen|weitere laden|weitere anzeigen|weitere termine|alle termine|load more|show more)$")
+                if not label:
+                    break
+                settle(sess.page, 1200)
+                clicks += 1
+                if len(sess.html()) <= before:
+                    break
+            if clicks:
+                scroll_through(sess.page, 6)
+                snaps[-1] = (sess.html(), sess.page.url, None)
+            page_info["actions"].append(f"load_more x{clicks}")
+
+        if "next" in act:
+            done = 0
+            for _ in range(act["max"]):
+                before = sess.html()
+                label = sess.page.evaluate(CLICK_TEXT_JS, act["next"])
+                if not label:
+                    break
+                settle(sess.page, 1500)
+                after = sess.html()
+                if after == before:
+                    break
+                scroll_through(sess.page, 4)
+                snaps.append((sess.html(), sess.page.url, None))
+                done += 1
+            page_info["actions"].append(f"next x{done}")
+
+        if "follow" in act:
+            rx = re.compile(act["follow"], re.I)
+            seen = {sess.page.url}
+            queue = []
+            followed = 0
+
+            def enqueue(html, base):
+                for h in re.findall(r'href="([^"]+)"', html):
+                    full = urljoin(base, h.replace("&amp;", "&")).split("#")[0]
+                    m = re.search(r"month=(\d{4}-\d{2})", full)
+                    keyed = m[1] if m else full
+                    if rx.search(full) and keyed not in seen:
+                        seen.add(keyed)
+                        queue.append(full)
+
+            enqueue(snaps[0][0], sess.page.url)
+            while queue and followed < act["max"]:
+                nxt = queue.pop(0)
+                systime.sleep(PAUSE)
+                st = sess.goto(nxt)
+                if st and st >= 400:
+                    report["errors"].append(f"HTTP {st} for {nxt}")
+                    continue
+                scroll_through(sess.page, 4)
+                html = sess.html()
+                snaps.append((html, sess.page.url, None))
+                enqueue(html, sess.page.url)
+                followed += 1
+            page_info["actions"].append(f"follow x{followed}")
+
+        if "day_tabs" in act:
+            labels = sess.page.evaluate(MARK_TABS_JS) or []
+            used = 0
+            for i, label in enumerate(labels[: act["day_tabs"]]):
+                ctx = parse_day_label(label, today)
+                if ctx is None:
+                    continue
+                try:
+                    sess.page.evaluate(MARK_TABS_JS)  # re-mark after re-renders
+                    loc = sess.page.locator(f'[data-msp-tab="{i}"]').first
+                    loc.scroll_into_view_if_needed(timeout=3000)
+                    loc.click(timeout=4000)
+                except Exception:
+                    continue
+                settle(sess.page, 1200)
+                snaps.append((sess.html(), sess.page.url, ctx))
+                used += 1
+            if used:
+                # The initial view has no reliable date (tab labels would be mistaken for dates)
+                snaps = [s for s in snaps if s[2] is not None]
+            page_info["actions"].append(f"day_tabs {used}/{len(labels)}")
+
+    page_info["snapshots"] = len(snaps)
+    if debug:
+        for n, (html, _, ctx) in enumerate(snaps[:3]):
+            save_debug(f"{venue['id']}-{idx}-{n}", html)
+    return snaps, sess.drain_json()
+
+
+# --------------------------------------------------------------------------- venues
+
+
+def scrape_venue(context, robots: Robots, venue: dict, debug: bool) -> tuple[list[dict], dict]:
+    today = datetime.now(BERLIN).date()
+    horizon = today + timedelta(days=HORIZON_DAYS)
+    report = {"name": venue["name"], "pages": [], "errors": [], "stats": [], "count": 0}
     events: list[dict] = []
-    for url in venue["urls"]:
-        soup = fetch(url)
-        if soup is None:
+    sess = Session(context)
+    try:
+        json_payloads = []
+        for idx, url in enumerate(venue["start"]):
+            if not robots.allowed(url):
+                report["errors"].append(f"robots.txt disallows {url}")
+                continue
+            systime.sleep(PAUSE)
+            try:
+                snaps, js = collect_snapshots(sess, venue, url, report, debug, idx)
+            except Exception as exc:
+                report["errors"].append(f"{url}: {type(exc).__name__}: {str(exc)[:200]}")
+                continue
+            json_payloads.extend(js)
+            for html, page_url, ctx in snaps:
+                json_payloads.extend((page_url, j) for j in embedded_json(html))
+                if venue["mode"] == "cards":
+                    evs, st = extract_cards(html, page_url, venue, today, ctx)
+                elif venue["mode"] == "screenings":
+                    evs, st = extract_screenings(html, page_url, venue, today, ctx)
+                else:
+                    evs, st = [], {}
+                report["stats"].append({"url": page_url, "context": str(ctx) if ctx else None, **st, "events": len(evs)})
+                events.extend(evs)
+
+            if venue["mode"] == "schedule":
+                show_rx = re.compile(venue["show_links"], re.I)
+                links = []
+                for html, page_url, _ in snaps:
+                    soup = make_soup(html)
+                    for a in soup.find_all("a", href=True):
+                        full = urljoin(page_url, a["href"]).split("#")[0].split("?")[0]
+                        if show_rx.search(full) and full not in links:
+                            links.append(full)
+                report["stats"].append({"url": url, "show_links": len(links)})
+                for link in links[:80]:
+                    if not robots.allowed(link):
+                        continue
+                    systime.sleep(PAUSE)
+                    try:
+                        sess.goto(link)
+                        html = sess.html()
+                    except Exception as exc:
+                        report["errors"].append(f"{link}: {type(exc).__name__}")
+                        continue
+                    evs, st = parse_schedule_page(html, link, venue, today)
+                    if st.get("dates"):
+                        report["stats"].append({"url": link, **st})
+                    events.extend(evs)
+                    json_payloads.extend((link, j) for j in embedded_json(html))
+
+        # JSON: always for json venues, otherwise only as a fallback
+        if venue.get("json") or not events:
+            jevents = []
+            for src, payload in json_payloads:
+                jevents.extend(harvest_json(payload, venue, src, today, horizon))
+            report["stats"].append({"json_payloads": len(json_payloads), "json_events": len(jevents)})
+            events.extend(jevents)
+            if debug and json_payloads:
+                DEBUG.mkdir(exist_ok=True)
+                biggest = sorted(json_payloads, key=lambda p: -len(json.dumps(p[1])))[:3]
+                for n, (src, payload) in enumerate(biggest):
+                    (DEBUG / f"{venue['id']}-json-{n}.json").write_text(
+                        json.dumps({"source": src, "data": payload}, ensure_ascii=False)[:2_000_000], encoding="utf-8")
+    except Exception as exc:
+        report["errors"].append(f"{type(exc).__name__}: {exc}")
+        traceback.print_exc()
+    finally:
+        sess.page.close()
+
+    events = [e for e in merge_events(events) if today <= date.fromisoformat(e["start"][:10]) <= horizon]
+    report["count"] = len(events)
+    return events, report
+
+
+def enrich(context, robots: Robots, events: list[dict], report: dict):
+    """Fill missing images/descriptions from each production page's og: tags (cached)."""
+    cache = {}
+    if META_CACHE.exists():
+        try:
+            cache = json.loads(META_CACHE.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            cache = {}
+    need = sorted({e["url"] for e in events if (not e.get("image") or not e.get("description")) and e.get("url")})
+    fetched = 0
+    for url in need:
+        if url in cache or fetched >= 250:
             continue
-        page_events = events_from_jsonld(soup, url, venue) or events_from_selectors(soup, url, venue)
-        print(f"  {venue['name']}: {len(page_events)} events from {url}")
-        events.extend(page_events)
-    return events
+        if not robots.allowed(url):
+            cache[url] = {}
+            continue
+        try:
+            r = context.request.get(url, timeout=20000)
+            meta = {}
+            if r.ok:
+                soup = make_soup(r.text(), keep_scripts=True)
+                for m in soup.find_all("meta"):
+                    k = m.get("property") or m.get("name")
+                    if k in ("og:image", "og:description", "description", "twitter:image"):
+                        meta.setdefault(k, m.get("content"))
+            cache[url] = {
+                "image": urljoin(url, meta.get("og:image") or meta.get("twitter:image") or "") or None,
+                "description": (meta.get("og:description") or meta.get("description") or "").strip()[:400] or None,
+            }
+            fetched += 1
+            systime.sleep(0.3)
+        except Exception:
+            cache[url] = {}
+    generic = re.compile(r"sharing|default|og-image|open_graph|logo|fallback|spielzeit", re.I)
+    for e in events:
+        c = cache.get(e.get("url") or "", {})
+        if not e.get("image") and c.get("image") and not generic.search(c["image"]):
+            e["image"] = c["image"]
+        if not e.get("description") and c.get("description"):
+            e["description"] = c["description"]
+    META_CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=0), encoding="utf-8")
+    report["enriched_pages"] = fetched
+
+
+# --------------------------------------------------------------------------- main
 
 
 def main() -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--only", nargs="*", help="venue ids to scrape")
+    ap.add_argument("--debug", action="store_true", help="save rendered HTML to debug/")
+    ap.add_argument("--no-enrich", action="store_true")
+    args = ap.parse_args()
+
     now = datetime.now(BERLIN)
-    horizon = now + timedelta(days=HORIZON_DAYS)
-    collected: list[dict] = []
-    for venue in VENUES:
-        print(f"Scraping {venue['name']}")
-        collected.extend(scrape_venue(venue))
-
-    # Keep future events within the horizon and drop duplicates.
-    seen = set()
-    events = []
-    for e in sorted(collected, key=lambda x: x["start"]):
-        start = datetime.fromisoformat(e["start"])
-        if start < now - timedelta(hours=3) or start > horizon:
-            continue
-        key = (e["venue_id"], e["start"], e["title"])
-        if key in seen:
-            continue
-        seen.add(key)
-        digest = hashlib.md5(e["title"].encode("utf-8")).hexdigest()[:6]
-        e["id"] = f"{e['venue_id']}-{start:%Y%m%d%H%M}-{digest}"
-        events.append(e)
-
-    # Safety net: never overwrite good data with an empty run.
-    if not events and OUT.exists():
+    previous = {"events": [], "venues": []}
+    if EVENTS_FILE.exists():
         try:
-            if json.loads(OUT.read_text(encoding="utf-8")).get("events"):
-                print("No events scraped; keeping existing data/events.json", file=sys.stderr)
-                return 1
+            previous = json.loads(EVENTS_FILE.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            pass
+    prev_status = {}
+    if STATUS_FILE.exists():
+        try:
+            prev_status = json.loads(STATUS_FILE.read_text(encoding="utf-8")).get("venues", {})
         except json.JSONDecodeError:
             pass
 
+    selected = [v for v in VENUES if not args.only or v["id"] in args.only]
+    all_events: list[dict] = []
+    status: dict[str, dict] = {}
+
+    with sync_playwright() as pw:
+        browser = pw.chromium.launch(args=["--disable-blink-features=AutomationControlled"])
+        context = browser.new_context(
+            locale="de-DE", timezone_id="Europe/Berlin", user_agent=USER_AGENT,
+            viewport={"width": 1366, "height": 900},
+        )
+        robots = Robots(context.request)
+        for venue in selected:
+            print(f"== {venue['name']}", flush=True)
+            t0 = systime.time()
+            events, report = scrape_venue(context, robots, venue, args.debug)
+            report["seconds"] = round(systime.time() - t0, 1)
+            if events:
+                report["ok"] = True
+                report["last_success"] = now.isoformat(timespec="minutes")
+                report["first"] = events[0]["start"][:10]
+                report["last"] = events[-1]["start"][:10]
+                report["sold_out"] = sum(1 for e in events if e["status"] == "sold_out")
+                report["with_image"] = sum(1 for e in events if e.get("image"))
+            else:
+                report["ok"] = False
+                report["last_success"] = prev_status.get(venue["id"], {}).get("last_success")
+                kept = [e for e in previous.get("events", []) if e["venue_id"] == venue["id"]
+                        and e["start"][:10] >= now.date().isoformat()]
+                report["kept_previous"] = len(kept)
+                events = kept
+            print(f"   {len(events)} events  ({report['seconds']}s)  errors: {report['errors'][:3]}", flush=True)
+            for st in report["stats"][:6]:
+                print(f"   {st}", flush=True)
+            all_events.extend(events)
+            status[venue["id"]] = report
+
+        # keep venues that were not part of this run
+        if args.only:
+            for e in previous.get("events", []):
+                if e["venue_id"] not in args.only and e["start"][:10] >= now.date().isoformat():
+                    all_events.append(e)
+            for vid, st in prev_status.items():
+                status.setdefault(vid, st)
+
+        if not args.no_enrich:
+            enrich_report = {}
+            try:
+                enrich(context, robots, all_events, enrich_report)
+            except Exception as exc:
+                print("enrich failed:", exc)
+            print("enriched pages:", enrich_report.get("enriched_pages"))
+        browser.close()
+
+    all_events = merge_events(all_events)
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        "venues": [{k: v for k, v in venue.items() if k != "urls"} for venue in VENUES],
-        "events": events,
+        "venues": [{k: v[k] for k in ("id", "name", "short", "category", "color")} | {"home": v["start"][0]}
+                   for v in VENUES],
+        "events": all_events,
     }
-    OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"Wrote {len(events)} events to {OUT.relative_to(ROOT)}")
+    DATA.mkdir(exist_ok=True)
+    EVENTS_FILE.write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
+    STATUS_FILE.write_text(json.dumps({"generated_at": payload["generated_at"], "venues": status},
+                                      ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"\nWrote {len(all_events)} events.")
+    for vid, st in status.items():
+        print(f"  {vid:24} {'OK ' if st.get('ok') else 'NO DATA'} {st.get('count', 0):5}")
     return 0
 
 
