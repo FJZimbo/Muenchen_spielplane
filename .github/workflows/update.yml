@@ -2,15 +2,29 @@ name: Update programme
 
 on:
   schedule:
-    - cron: "15 4 * * *"
+    - cron: "15 4 * * *"   # daily at 04:15 UTC (06:15 in Munich in summer, 05:15 in winter)
   workflow_dispatch:
+    inputs:
+      debug:
+        description: "Save page snapshots to debug/ (for fixing a venue)"
+        type: boolean
+        default: true
+      only:
+        description: "Only these venue ids, space separated (empty = all)"
+        type: string
+        default: ""
 
 permissions:
   contents: write
 
+concurrency:
+  group: update-programme
+  cancel-in-progress: false
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
 
@@ -19,14 +33,26 @@ jobs:
           python-version: "3.12"
           cache: pip
 
-      - run: pip install -r requirements.txt
+      - name: Install
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
+
+      - name: Offline parser tests
+        run: python tests/test_extract.py
 
       - name: Scrape venues
-        run: python scripts/scrape.py
-        continue-on-error: true
+        run: |
+          ARGS=""
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.debug }}" = "true" ]; then
+            rm -f debug/*.html debug/*.json
+            ARGS="--debug"
+          fi
+          if [ -n "${{ inputs.only }}" ]; then ARGS="$ARGS --only ${{ inputs.only }}"; fi
+          python scripts/scrape.py $ARGS
 
-      - name: Commit updated data
+      - name: Commit data
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Update programme data"
-          file_pattern: data/events.json
+          file_pattern: "data debug"
