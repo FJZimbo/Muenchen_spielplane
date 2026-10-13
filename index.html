@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>München Spielplan</title>
+  <meta name="description" content="Spielplan von Theater, Oper, Konzert und Kino in München an einem Ort.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="#top">München <span>Spielplan</span></a>
+      <div class="header-actions">
+        <button id="lang" class="pill" type="button" aria-label="Sprache wechseln">EN</button>
+        <span id="updated" class="muted small"></span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="filters wrap" aria-label="Filter">
+    <div class="filter-row">
+      <button id="today" class="pill pill-strong" type="button"></button>
+      <label class="select-wrap">
+        <span class="sr-only">Ort</span>
+        <select id="venue"></select>
+      </label>
+      <label class="select-wrap">
+        <span class="sr-only">Kategorie</span>
+        <select id="category"></select>
+      </label>
+      <label class="select-wrap">
+        <span class="sr-only">Datum</span>
+        <input id="date" type="date">
+      </label>
+    </div>
+    <div id="venue-bubbles" class="bubbles" aria-label="Orte"></div>
+    <div id="category-bubbles" class="bubbles" aria-label="Kategorien"></div>
+    <div id="day-strip" class="day-strip" aria-label="Tage springen"></div>
+  </nav>
+
+  <main id="top" class="wrap">
+    <p id="status" class="status" role="status"></p>
+    <div id="program"></div>
+  </main>
+
+  <footer class="site-footer wrap muted small">
+    <p id="footer-note"></p>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
