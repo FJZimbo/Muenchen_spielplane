@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-13T17:40:26+00:00",
+ "generated_at": "2026-10-14T04:48:27+00:00",
  "venues": {
   "residenztheater": {
    "name": "Residenztheater",
@@ -18,24 +18,24 @@
     {
      "url": "https://www.residenztheater.de/spielplan",
      "context": null,
-     "anchors": 40,
-     "cards": 40,
+     "anchors": 38,
+     "cards": 38,
      "no_date": 0,
      "no_time": 0,
      "no_title": 0,
      "pattern": "calendarics\\.ics\\?.*?activity(?:%5D|\\])?=(\\d+)",
-     "events": 40
+     "events": 38
     },
     {
      "url": "https://www.residenztheater.de/spielplan?month=2026-10&cHash=7630e6566b28d541512ed3aa12ba7b29",
      "context": null,
-     "anchors": 40,
-     "cards": 40,
+     "anchors": 38,
+     "cards": 38,
      "no_date": 0,
      "no_time": 0,
      "no_title": 0,
      "pattern": "calendarics\\.ics\\?.*?activity(?:%5D|\\])?=(\\d+)",
-     "events": 40
+     "events": 38
     },
     {
      "url": "https://www.residenztheater.de/spielplan?month=2026-11&cHash=50e34a17963e7f2baea7a1e33d4934de",
@@ -126,13 +126,13 @@
      "events": 2
     }
    ],
-   "count": 111,
-   "seconds": 34.4,
+   "count": 109,
+   "seconds": 42.5,
    "ok": true,
-   "last_success": "2026-10-13T19:30+02:00",
-   "first": "2026-10-13",
+   "last_success": "2026-10-14T06:40+02:00",
+   "first": "2026-10-14",
    "last": "2027-06-19",
-   "sold_out": 12,
+   "sold_out": 11,
    "with_image": 0
   },
   "kammerspiele": {
@@ -152,22 +152,22 @@
     {
      "url": "https://www.muenchner-kammerspiele.de/de/programm/",
      "context": null,
-     "anchors": 386,
-     "cards": 386,
+     "anchors": 384,
+     "cards": 384,
      "no_date": 14,
      "no_time": 40,
      "no_title": 0,
      "pattern": "/programm/\\d+-[^/?#]+/(\\d+)\\.ics",
-     "events": 332
+     "events": 330
     }
    ],
-   "count": 166,
-   "seconds": 10.7,
+   "count": 165,
+   "seconds": 12.9,
    "ok": true,
-   "last_success": "2026-10-13T19:30+02:00",
-   "first": "2026-10-13",
+   "last_success": "2026-10-14T06:40+02:00",
+   "first": "2026-10-14",
    "last": "2027-11-17",
-   "sold_out": 8,
+   "sold_out": 6,
    "with_image": 0
   },
   "volkstheater": {
@@ -187,21 +187,21 @@
     {
      "url": "https://www.muenchner-volkstheater.de/programm/spielplan",
      "context": null,
-     "anchors": 127,
+     "anchors": 126,
      "cards": 125,
-     "no_date": 123,
+     "no_date": 122,
      "no_time": 0,
      "no_title": 0,
      "pattern": "muenchner-volkstheater\\.de/programm/(?!spielplan)([a-z0-9-]+/[a-z0-9-]+)/?$",
-     "events": 2
+     "events": 3
     }
    ],
-   "count": 1,
-   "seconds": 7.5,
+   "count": 2,
+   "seconds": 7.9,
    "ok": true,
-   "last_success": "2026-10-13T19:30+02:00",
-   "first": "2026-10-13",
-   "last": "2026-10-13",
+   "last_success": "2026-10-14T06:40+02:00",
+   "first": "2026-10-14",
+   "last": "2026-10-15",
    "sold_out": 0,
    "with_image": 0
   },
@@ -234,17 +234,12 @@
     },
     {
      "url": "https://www.deutsches-theater.de/programm/",
-     "show_links": 127
+     "show_links": 126
     },
     {
      "url": "https://www.deutsches-theater.de/disney-der-gloeckner-von-notre-dame/",
      "mode": "range+weekly",
-     "dates": 28
-    },
-    {
-     "url": "https://www.deutsches-theater.de/frau-julia-sucht-das-grosse-glueck/",
-     "mode": "dates",
-     "dates": 1
+     "dates": 27
     },
     {
      "url": "https://www.deutsches-theater.de/hagen-rether-liebe/",
@@ -547,6 +542,11 @@
      "dates": 1
     },
     {
+     "url": "https://www.deutsches-theater.de/notenlos-dein-wunschmusical-2027/",
+     "mode": "dates",
+     "dates": 1
+    },
+    {
      "url": "https://www.deutsches-theater.de/",
      "context": null,
      "events": 0
@@ -563,7 +563,7 @@
     {
      "url": "https://www.deutsches-theater.de/disney-der-gloeckner-von-notre-dame/",
      "mode": "range+weekly",
-     "dates": 28
+     "dates": 27
     },
     {
      "url": "https://www.deutsches-theater.de/kiss-forever-band/",
@@ -576,14 +576,14 @@
      "dates": 16
     }
    ],
-   "count": 215,
-   "seconds": 354.5,
+   "count": 214,
+   "seconds": 349.6,
    "ok": true,
-   "last_success": "2026-10-13T19:30+02:00",
-   "first": "2026-10-13",
+   "last_success": "2026-10-14T06:40+02:00",
+   "first": "2026-10-14",
    "last": "2027-10-18",
    "sold_out": 0,
-   "with_image": 215
+   "with_image": 214
   },
   "isarphilharmonie": {
    "name": "Isarphilharmonie",
@@ -612,9 +612,9 @@
     }
    ],
    "count": 24,
-   "seconds": 7.9,
+   "seconds": 7.6,
    "ok": true,
-   "last_success": "2026-10-13T19:30+02:00",
+   "last_success": "2026-10-14T06:40+02:00",
    "first": "2026-10-15",
    "last": "2026-11-13",
    "sold_out": 0,
@@ -670,34 +670,34 @@
     {
      "url": "https://www.museum-lichtspiele.de/programm?filter=all",
      "context": null,
-     "film_links": 62,
-     "blocks": 31,
-     "screenings": 358,
+     "film_links": 60,
+     "blocks": 30,
+     "screenings": 326,
      "undated_times": 0,
-     "events": 358
+     "events": 326
     },
     {
      "url": "https://www.museum-lichtspiele.de/",
      "context": null,
-     "film_links": 25,
-     "blocks": 24,
+     "film_links": 32,
+     "blocks": 31,
      "screenings": 9,
-     "undated_times": 4,
+     "undated_times": 13,
      "events": 9
     },
     {
-     "json_payloads": 3,
-     "json_events": 0
+     "json_payloads": 4,
+     "json_events": 163
     }
    ],
-   "count": 80,
-   "seconds": 16.9,
+   "count": 228,
+   "seconds": 17.7,
    "ok": true,
-   "last_success": "2026-10-13T19:30+02:00",
-   "first": "2026-10-13",
+   "last_success": "2026-10-14T06:40+02:00",
+   "first": "2026-10-14",
    "last": "2027-01-09",
    "sold_out": 0,
-   "with_image": 80
+   "with_image": 228
   },
   "city-kino-atelier": {
    "name": "City Kinos & Atelier",
@@ -714,27 +714,27 @@
    "errors": [],
    "stats": [
     {
-     "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-13&tab=daily&sessionsExpanded=&film=grosse-filme-auf-der-grossen-leinwand",
+     "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-14&tab=daily&sessionsExpanded=&film=alte-liebe",
      "context": null,
-     "film_links": 26,
-     "blocks": 14,
-     "screenings": 7,
-     "undated_times": 0,
-     "events": 7
+     "film_links": 35,
+     "blocks": 17,
+     "screenings": 13,
+     "undated_times": 2,
+     "events": 13
     },
     {
-     "json_payloads": 13,
-     "json_events": 285
+     "json_payloads": 14,
+     "json_events": 281
     }
    ],
-   "count": 169,
-   "seconds": 7.6,
+   "count": 168,
+   "seconds": 7.1,
    "ok": true,
-   "last_success": "2026-10-13T19:30+02:00",
-   "first": "2026-10-13",
+   "last_success": "2026-10-14T06:40+02:00",
+   "first": "2026-10-14",
    "last": "2026-11-14",
    "sold_out": 0,
-   "with_image": 128
+   "with_image": 137
   }
  }
 }
