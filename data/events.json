@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-17T04:43:48+00:00",
+ "generated_at": "2026-10-17T16:23:04+00:00",
  "venues": [
   {
    "id": "residenztheater",
@@ -259,120 +259,6 @@
    "source": "json"
   },
   {
-   "id": "14c3b7673b15",
-   "venue_id": "city-kino-atelier",
-   "title": "Alte Liebe",
-   "subtitle": null,
-   "start": "2026-10-17T15:00:00+02:00",
-   "time_tbd": false,
-   "stage": null,
-   "genre": "Film",
-   "tags": [],
-   "status": "unknown",
-   "price": null,
-   "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Alte Liebe Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/alte-liebe.json?id=alte-liebe",
-   "ticket_url": null,
-   "description": null,
-   "source": "json"
-  },
-  {
-   "id": "015465c61a96",
-   "venue_id": "city-kino-atelier",
-   "title": "NAZA",
-   "subtitle": null,
-   "start": "2026-10-17T15:00:00+02:00",
-   "time_tbd": false,
-   "stage": null,
-   "genre": "Film",
-   "tags": [],
-   "status": "unknown",
-   "price": null,
-   "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/NAZA - Poster.jpg",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/naza.json?id=naza",
-   "ticket_url": null,
-   "description": null,
-   "source": "json"
-  },
-  {
-   "id": "519f18d61c70",
-   "venue_id": "residenztheater",
-   "title": "Theaterführung",
-   "subtitle": "Blick hinter die Kulissen",
-   "start": "2026-10-17T15:00:00+02:00",
-   "time_tbd": false,
-   "stage": "Residenztheater",
-   "genre": "Schauspiel",
-   "tags": [],
-   "status": "sold_out",
-   "price": null,
-   "duration_min": 80,
-   "image": "https://www.residenztheater.de/media/user_upload/BS_0397w.jpg",
-   "url": "https://www.residenztheater.de/stuecke/detail/theaterfuehrung",
-   "ticket_url": null,
-   "description": "Jeden Samstag haben Sie die Gelegenheit, die Welt hinter den Kulissen des Residenztheaters zu entdecken.",
-   "source": "page"
-  },
-  {
-   "id": "5cf0c5924cb7",
-   "venue_id": "city-kino-atelier",
-   "title": "Sinn und Sinnlichkeit (2026)",
-   "subtitle": null,
-   "start": "2026-10-17T15:20:00+02:00",
-   "time_tbd": false,
-   "stage": null,
-   "genre": "Film",
-   "tags": [],
-   "status": "unknown",
-   "price": null,
-   "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Sinn und Sinnlichkeit 2026 Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/sinn-und-sinnlichkeit-2026.json?id=sinn-und-sinnlichkeit-2026",
-   "ticket_url": null,
-   "description": null,
-   "source": "json"
-  },
-  {
-   "id": "1937b73cfd4b",
-   "venue_id": "city-kino-atelier",
-   "title": "Vaterland",
-   "subtitle": null,
-   "start": "2026-10-17T15:30:00+02:00",
-   "time_tbd": false,
-   "stage": null,
-   "genre": "Film",
-   "tags": [],
-   "status": "unknown",
-   "price": null,
-   "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Fatherland - Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/vaterland.json?id=vaterland",
-   "ticket_url": null,
-   "description": null,
-   "source": "json"
-  },
-  {
-   "id": "72ec1a827aeb",
-   "venue_id": "city-kino-atelier",
-   "title": "Heimsuchung - Eine Jahrhundertgeschichte",
-   "subtitle": null,
-   "start": "2026-10-17T15:45:00+02:00",
-   "time_tbd": false,
-   "stage": null,
-   "genre": "Film",
-   "tags": [],
-   "status": "unknown",
-   "price": null,
-   "duration_min": null,
-   "image": null,
-   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
-   "ticket_url": null,
-   "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
-   "source": "json"
-  },
-  {
    "id": "fbcdcd0cf8e3",
    "venue_id": "museum-lichtspiele",
    "title": "Sense and Sensibility",
@@ -449,82 +335,6 @@
    "source": "json"
   },
   {
-   "id": "6cb2d683a98d",
-   "venue_id": "city-kino-atelier",
-   "title": "Frau Winkler verlässt das Haus",
-   "subtitle": null,
-   "start": "2026-10-17T17:15:00+02:00",
-   "time_tbd": false,
-   "stage": null,
-   "genre": "Film",
-   "tags": [],
-   "status": "unknown",
-   "price": null,
-   "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Frau Winkler verlässt das Haus Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/frau-winkler-verlasst-das-haus.json?id=frau-winkler-verlasst-das-haus",
-   "ticket_url": null,
-   "description": null,
-   "source": "json"
-  },
-  {
-   "id": "b7064fe8b3e3",
-   "venue_id": "city-kino-atelier",
-   "title": "Digger",
-   "subtitle": null,
-   "start": "2026-10-17T17:30:00+02:00",
-   "time_tbd": false,
-   "stage": null,
-   "genre": "Film",
-   "tags": [],
-   "status": "unknown",
-   "price": null,
-   "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Digger Poster.jpg",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/digger.json?id=digger",
-   "ticket_url": null,
-   "description": null,
-   "source": "json"
-  },
-  {
-   "id": "0d04378a9209",
-   "venue_id": "city-kino-atelier",
-   "title": "NAZA",
-   "subtitle": null,
-   "start": "2026-10-17T17:30:00+02:00",
-   "time_tbd": false,
-   "stage": null,
-   "genre": "Film",
-   "tags": [],
-   "status": "unknown",
-   "price": null,
-   "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/NAZA - Poster.jpg",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/naza.json?id=naza",
-   "ticket_url": null,
-   "description": null,
-   "source": "json"
-  },
-  {
-   "id": "390bcb679ac2",
-   "venue_id": "city-kino-atelier",
-   "title": "Sinn und Sinnlichkeit (2026)",
-   "subtitle": null,
-   "start": "2026-10-17T18:15:00+02:00",
-   "time_tbd": false,
-   "stage": null,
-   "genre": "Film",
-   "tags": [],
-   "status": "unknown",
-   "price": null,
-   "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Sinn und Sinnlichkeit 2026 Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/sinn-und-sinnlichkeit-2026.json?id=sinn-und-sinnlichkeit-2026",
-   "ticket_url": null,
-   "description": null,
-   "source": "json"
-  },
-  {
    "id": "8e49564b1bb2",
    "venue_id": "city-kino-atelier",
    "title": "Heimsuchung - Eine Jahrhundertgeschichte",
@@ -538,7 +348,7 @@
    "price": null,
    "duration_min": null,
    "image": null,
-   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
    "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
@@ -613,8 +423,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Alte Liebe Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/alte-liebe.json?id=alte-liebe",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Alte Liebe Poster",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/alte-liebe.json?id=alte-liebe",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -651,12 +461,12 @@
    "tags": [
     "English surtitles"
    ],
-   "status": "few",
+   "status": "sold_out",
    "price": "21–64 €",
    "duration_min": 140,
    "image": "https://www.residenztheater.de/media/user_upload/01_Stuecke/2023_2024/Maria_Stuart/Web/Maria_Stuart_-_Pia_Haendler__Lisa_Stiegler__c__Sandra_Then_-Web-6.jpg",
    "url": "https://www.residenztheater.de/stuecke/detail/maria-stuart",
-   "ticket_url": "https://tickets.staatstheater.bayern/rth.webshop/webticket/shop?event=43107",
+   "ticket_url": null,
    "description": "Intrigen, Verschwörungen, politische Ränkespiele – Schillers Trauerspiel zeigt den Machtkampf zwischen der englischen Königin Elisabeth I. und der schottischen Königin Maria Stuart. Was aber, wenn nur der Zufall über Macht und Ohnmacht",
    "source": "page"
   },
@@ -711,8 +521,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Fatherland - Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/vaterland.json?id=vaterland",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Fatherland - Poster",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/vaterland.json?id=vaterland",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -767,12 +577,12 @@
    "tags": [
     "Premiere"
    ],
-   "status": "few",
+   "status": "sold_out",
    "price": null,
    "duration_min": null,
    "image": "https://www.muenchner-kammerspiele.de/images/MK_JUGEND_OHNE_GOTT_02_0736_klein.jpg?w=2000",
-   "url": "https://www.muenchner-kammerspiele.de/de/programm/51771-jugend-ohne-gott?activity=52283",
-   "ticket_url": "https://tickets.muenchner-kammerspiele.de/de/buyingflow/tickets/16482/39739",
+   "url": "https://www.muenchner-kammerspiele.de/de/programm/51771-jugend-ohne-gott",
+   "ticket_url": null,
    "description": "Jugend ohne Gott // Eine Jugend im Zeitalter der Fische // nach dem Roman von Ödön von Horváth // mit Szenen von Anne Habermehl // Schauspielhaus // Eine Klasse Jugendlicher erklärt ihrem Lehrer den Krieg. Der Lehrer sieht eine riesige Kluft zwischen den Generationen, er findet, das „Zeitalter der Fische“ sei angebrochen. Seine Schüler*innen wachsen in einem Klima von Gefühlskälte und Leistungsdru",
    "source": "page"
   },
@@ -827,8 +637,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/SOCIALRECKONING_Mainart_1SHT_Print_GER_A3_300dpi_CMYK.jpg",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/the-social-reckoning.json?id=the-social-reckoning",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/SOCIALRECKONING_Mainart_1SHT_Print_GER_A3_300dpi_CMYK.jpg",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/the-social-reckoning.json?id=the-social-reckoning",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -885,7 +695,7 @@
    "price": null,
    "duration_min": null,
    "image": null,
-   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
    "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
@@ -903,8 +713,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Sinn und Sinnlichkeit 2026 Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/sinn-und-sinnlichkeit-2026.json?id=sinn-und-sinnlichkeit-2026",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Sinn und Sinnlichkeit 2026 Poster",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/sinn-und-sinnlichkeit-2026.json?id=sinn-und-sinnlichkeit-2026",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -922,8 +732,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Digger Poster.jpg",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/digger.json?id=digger",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Digger Poster.jpg",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/digger.json?id=digger",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -941,8 +751,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Primetime - Poster.jpg",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/primetime.json?id=primetime",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Primetime - Poster.jpg",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/primetime.json?id=primetime",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -999,7 +809,7 @@
    "price": null,
    "duration_min": null,
    "image": null,
-   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
    "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
@@ -1113,7 +923,7 @@
    "price": null,
    "duration_min": null,
    "image": null,
-   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
    "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
@@ -1132,7 +942,7 @@
    "price": null,
    "duration_min": null,
    "image": null,
-   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
    "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
@@ -1190,7 +1000,7 @@
    "duration_min": 97,
    "image": "https://www.museum-lichtspiele.de/images/Breite_400px_RGB/p_113712X10102025143154.jpg",
    "url": "https://www.museum-lichtspiele.de/detail/113712/Pumuckl%20und%20das%20gro%C3%9Fe%20Missverst%C3%A4ndnis",
-   "ticket_url": "https://www.museum-lichtspiele.de/ticket?l=%2Fticket%3Fl%3D*kinoheld*%25250AcinemaPath%25253A%252520%252526apos%25253BKino-M%2525FCnchen%252FMuseum%25252520Lichtspiele%25252520M%2525FCnchen%252526apos%25253B%25252C%25250Atarget%25253A%252520%252526apos%25253Bself%252526apos%25253B%25252C%25250AnoChange%25253A%252520true%25252C%25250Arb%25253A%252520%252526apos%25253B1%252526apos%25253B%25252C%25250Alang%25253A%252520%252526apos%25253Bde%252526apos%25253B%25252C%25250Amode%25253A%252520%252526apos%25253Bwidget%252526apos%25253B%25252C%25250AshowId%25253A%252520%252526apos%25253B3681224570%252526apos%25253B",
+   "ticket_url": null,
    "description": "Museum Lichtspiele - Lilienstrasse 2, 81669 München: Pumuckl und das große Missverständnis | Aktuelles Kinoprogramm, Kino, Film- und Kino-Infos, Online-Tickets, News, Events und vieles mehr...",
    "source": "page"
   },
@@ -1209,7 +1019,7 @@
    "duration_min": 93,
    "image": "https://www.museum-lichtspiele.de/images/Breite_400px_RGB/p_117474X28112025153936.jpg",
    "url": "https://www.museum-lichtspiele.de/detail/117474/Checker%20Tobi%20und%20die%20heimliche%20Herrscherin%20der%20Erde",
-   "ticket_url": "https://www.museum-lichtspiele.de/ticket?l=%2Fticket%3Fl%3D*kinoheld*%25250AcinemaPath%25253A%252520%252526apos%25253BKino-M%2525FCnchen%252FMuseum%25252520Lichtspiele%25252520M%2525FCnchen%252526apos%25253B%25252C%25250Atarget%25253A%252520%252526apos%25253Bself%252526apos%25253B%25252C%25250AnoChange%25253A%252520true%25252C%25250Arb%25253A%252520%252526apos%25253B1%252526apos%25253B%25252C%25250Alang%25253A%252520%252526apos%25253Bde%252526apos%25253B%25252C%25250Amode%25253A%252520%252526apos%25253Bwidget%252526apos%25253B%25252C%25250AshowId%25253A%252520%252526apos%25253B3681306679%252526apos%25253B",
+   "ticket_url": null,
    "description": "Museum Lichtspiele - Lilienstrasse 2, 81669 München: Checker Tobi und die heimliche Herrscherin der Erde | Aktuelles Kinoprogramm, Kino, Film- und Kino-Infos, Online-Tickets, News, Events und vieles mehr...",
    "source": "page"
   },
@@ -1227,7 +1037,7 @@
    "price": null,
    "duration_min": null,
    "image": null,
-   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
    "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
@@ -1245,8 +1055,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Sinn und Sinnlichkeit 2026 Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/sinn-und-sinnlichkeit-2026.json?id=sinn-und-sinnlichkeit-2026",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Sinn und Sinnlichkeit 2026 Poster",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/sinn-und-sinnlichkeit-2026.json?id=sinn-und-sinnlichkeit-2026",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -1285,7 +1095,7 @@
    "duration_min": 83,
    "image": "https://www.museum-lichtspiele.de/images/Breite_400px_RGB/p_120318.jpg?v=1788486605",
    "url": "https://www.museum-lichtspiele.de/detail/120318/PAW%20Patrol%3A%20Der%20Dino%20Film",
-   "ticket_url": "https://www.museum-lichtspiele.de/ticket?l=%2Fticket%3Fl%3D*kinoheld*%25250AcinemaPath%25253A%252520%252526apos%25253BKino-M%2525FCnchen%252FMuseum%25252520Lichtspiele%25252520M%2525FCnchen%252526apos%25253B%25252C%25250Atarget%25253A%252520%252526apos%25253Bself%252526apos%25253B%25252C%25250AnoChange%25253A%252520true%25252C%25250Arb%25253A%252520%252526apos%25253B1%252526apos%25253B%25252C%25250Alang%25253A%252520%252526apos%25253Bde%252526apos%25253B%25252C%25250Amode%25253A%252520%252526apos%25253Bwidget%252526apos%25253B%25252C%25250AshowId%25253A%252520%252526apos%25253B3681331853%252526apos%25253B",
+   "ticket_url": null,
    "description": "Museum Lichtspiele - Lilienstrasse 2, 81669 München: PAW Patrol: Der Dino Film | Aktuelles Kinoprogramm, Kino, Film- und Kino-Infos, Online-Tickets, News, Events und vieles mehr...",
    "source": "page"
   },
@@ -1322,7 +1132,7 @@
    "price": null,
    "duration_min": null,
    "image": null,
-   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
    "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
@@ -1342,7 +1152,7 @@
    "duration_min": 60,
    "image": "https://www.museum-lichtspiele.de/images/Breite_400px_RGB/p_126616X27032026165446.jpg",
    "url": "https://www.museum-lichtspiele.de/detail/126616/Lustiges%20Pettersson%20und%20Findus%20Mitmachkino%202",
-   "ticket_url": "https://www.museum-lichtspiele.de/ticket?l=%2Fticket%3Fl%3D*kinoheld*%25250AcinemaPath%25253A%252520%252526apos%25253BKino-M%2525FCnchen%252FMuseum%25252520Lichtspiele%25252520M%2525FCnchen%252526apos%25253B%25252C%25250Atarget%25253A%252520%252526apos%25253Bself%252526apos%25253B%25252C%25250AnoChange%25253A%252520true%25252C%25250Arb%25253A%252520%252526apos%25253B1%252526apos%25253B%25252C%25250Alang%25253A%252520%252526apos%25253Bde%252526apos%25253B%25252C%25250Amode%25253A%252520%252526apos%25253Bwidget%252526apos%25253B%25252C%25250AshowId%25253A%252520%252526apos%25253B3681288496%252526apos%25253B",
+   "ticket_url": null,
    "description": "Museum Lichtspiele - Lilienstrasse 2, 81669 München: Lustiges Pettersson und Findus Mitmachkino 2 | Aktuelles Kinoprogramm, Kino, Film- und Kino-Infos, Online-Tickets, News, Events und vieles mehr...",
    "source": "page"
   },
@@ -1399,7 +1209,7 @@
    "price": null,
    "duration_min": null,
    "image": null,
-   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
    "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
@@ -1417,10 +1227,10 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/NAZA - Poster.jpg",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/naza.json?id=naza",
+   "image": null,
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
-   "description": null,
+   "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
   },
   {
@@ -1474,8 +1284,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Fatherland - Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/vaterland.json?id=vaterland",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Fatherland - Poster",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/vaterland.json?id=vaterland",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -1493,8 +1303,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Sinn und Sinnlichkeit 2026 Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/sinn-und-sinnlichkeit-2026.json?id=sinn-und-sinnlichkeit-2026",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Sinn und Sinnlichkeit 2026 Poster",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/sinn-und-sinnlichkeit-2026.json?id=sinn-und-sinnlichkeit-2026",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -1513,7 +1323,7 @@
    "price": null,
    "duration_min": null,
    "image": null,
-   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
    "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
@@ -1588,8 +1398,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Frau Winkler verlässt das Haus Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/frau-winkler-verlasst-das-haus.json?id=frau-winkler-verlasst-das-haus",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Frau Winkler verlässt das Haus Poster",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/frau-winkler-verlasst-das-haus.json?id=frau-winkler-verlasst-das-haus",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -1626,8 +1436,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Alte Liebe Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/alte-liebe.json?id=alte-liebe",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Alte Liebe Poster",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/alte-liebe.json?id=alte-liebe",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -1664,10 +1474,10 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/NAZA - Poster.jpg",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/naza.json?id=naza",
+   "image": null,
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
-   "description": null,
+   "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
   },
   {
@@ -1740,8 +1550,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Sinn und Sinnlichkeit 2026 Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/sinn-und-sinnlichkeit-2026.json?id=sinn-und-sinnlichkeit-2026",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Sinn und Sinnlichkeit 2026 Poster",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/sinn-und-sinnlichkeit-2026.json?id=sinn-und-sinnlichkeit-2026",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -1760,7 +1570,7 @@
    "price": null,
    "duration_min": null,
    "image": null,
-   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
    "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
@@ -1797,8 +1607,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Fatherland - Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/vaterland.json?id=vaterland",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Fatherland - Poster",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/vaterland.json?id=vaterland",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -1816,8 +1626,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Digger Poster.jpg",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/digger.json?id=digger",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Digger Poster.jpg",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/digger.json?id=digger",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -1835,8 +1645,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Alte Liebe Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/alte-liebe.json?id=alte-liebe",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Alte Liebe Poster",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/alte-liebe.json?id=alte-liebe",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -1952,8 +1762,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Digger Poster.jpg",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/digger.json?id=digger",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Digger Poster.jpg",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/digger.json?id=digger",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -1972,7 +1782,7 @@
    "price": null,
    "duration_min": null,
    "image": null,
-   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
    "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
@@ -1990,8 +1800,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Sinn und Sinnlichkeit 2026 Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/sinn-und-sinnlichkeit-2026.json?id=sinn-und-sinnlichkeit-2026",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Sinn und Sinnlichkeit 2026 Poster",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/sinn-und-sinnlichkeit-2026.json?id=sinn-und-sinnlichkeit-2026",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -2009,8 +1819,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Primetime - Poster.jpg",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/primetime.json?id=primetime",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Primetime - Poster.jpg",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/primetime.json?id=primetime",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -2028,8 +1838,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/SOCIALRECKONING_Mainart_1SHT_Print_GER_A3_300dpi_CMYK.jpg",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/the-social-reckoning.json?id=the-social-reckoning",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/SOCIALRECKONING_Mainart_1SHT_Print_GER_A3_300dpi_CMYK.jpg",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/the-social-reckoning.json?id=the-social-reckoning",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -2123,8 +1933,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Sinn und Sinnlichkeit 2026 Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/sinn-und-sinnlichkeit-2026.json?id=sinn-und-sinnlichkeit-2026",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Sinn und Sinnlichkeit 2026 Poster",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/sinn-und-sinnlichkeit-2026.json?id=sinn-und-sinnlichkeit-2026",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -2142,8 +1952,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Fatherland - Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/vaterland.json?id=vaterland",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Fatherland - Poster",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/vaterland.json?id=vaterland",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -2218,8 +2028,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Alte Liebe Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/alte-liebe.json?id=alte-liebe",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Alte Liebe Poster",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/alte-liebe.json?id=alte-liebe",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -2238,7 +2048,7 @@
    "price": null,
    "duration_min": null,
    "image": null,
-   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
    "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
@@ -2294,8 +2104,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Frau Winkler verlässt das Haus Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/frau-winkler-verlasst-das-haus.json?id=frau-winkler-verlasst-das-haus",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Frau Winkler verlässt das Haus Poster",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/frau-winkler-verlasst-das-haus.json?id=frau-winkler-verlasst-das-haus",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -2313,10 +2123,10 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/NAZA - Poster.jpg",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/naza.json?id=naza",
+   "image": null,
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
-   "description": null,
+   "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
   },
   {
@@ -2389,8 +2199,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Sinn und Sinnlichkeit 2026 Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/sinn-und-sinnlichkeit-2026.json?id=sinn-und-sinnlichkeit-2026",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Sinn und Sinnlichkeit 2026 Poster",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/sinn-und-sinnlichkeit-2026.json?id=sinn-und-sinnlichkeit-2026",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -2408,8 +2218,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Digger Poster.jpg",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/digger.json?id=digger",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Digger Poster.jpg",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/digger.json?id=digger",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -2447,8 +2257,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Alte Liebe Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/alte-liebe.json?id=alte-liebe",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Alte Liebe Poster",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/alte-liebe.json?id=alte-liebe",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -2467,7 +2277,7 @@
    "price": null,
    "duration_min": null,
    "image": null,
-   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
    "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
@@ -2504,8 +2314,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Fatherland - Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/vaterland.json?id=vaterland",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Fatherland - Poster",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/vaterland.json?id=vaterland",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -2700,8 +2510,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Sinn und Sinnlichkeit 2026 Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/sinn-und-sinnlichkeit-2026.json?id=sinn-und-sinnlichkeit-2026",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Sinn und Sinnlichkeit 2026 Poster",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/sinn-und-sinnlichkeit-2026.json?id=sinn-und-sinnlichkeit-2026",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -2719,8 +2529,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Digger Poster.jpg",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/digger.json?id=digger",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Digger Poster.jpg",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/digger.json?id=digger",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -2738,8 +2548,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/SOCIALRECKONING_Mainart_1SHT_Print_GER_A3_300dpi_CMYK.jpg",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/the-social-reckoning.json?id=the-social-reckoning",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/SOCIALRECKONING_Mainart_1SHT_Print_GER_A3_300dpi_CMYK.jpg",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/the-social-reckoning.json?id=the-social-reckoning",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -2757,8 +2567,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Primetime - Poster.jpg",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/primetime.json?id=primetime",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Primetime - Poster.jpg",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/primetime.json?id=primetime",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -2776,8 +2586,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/specials/mongay-special-ivan-and-hadoum.json?id=mongay-special-ivan-and-hadoum",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/specials/mongay-special-ivan-and-hadoum.json?id=mongay-special-ivan-and-hadoum",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/specials/mongay-special-ivan-and-hadoum.json?id=mongay-special-ivan-and-hadoum",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/specials/mongay-special-ivan-and-hadoum.json?id=mongay-special-ivan-and-hadoum",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -2909,8 +2719,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Sinn und Sinnlichkeit 2026 Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/sinn-und-sinnlichkeit-2026.json?id=sinn-und-sinnlichkeit-2026",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Sinn und Sinnlichkeit 2026 Poster",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/sinn-und-sinnlichkeit-2026.json?id=sinn-und-sinnlichkeit-2026",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -2928,8 +2738,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Fatherland - Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/vaterland.json?id=vaterland",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Fatherland - Poster",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/vaterland.json?id=vaterland",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -2948,7 +2758,7 @@
    "price": null,
    "duration_min": null,
    "image": null,
-   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
    "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
@@ -3042,8 +2852,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Alte Liebe Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/alte-liebe.json?id=alte-liebe",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Alte Liebe Poster",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/alte-liebe.json?id=alte-liebe",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -3099,8 +2909,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Frau Winkler verlässt das Haus Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/frau-winkler-verlasst-das-haus.json?id=frau-winkler-verlasst-das-haus",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Frau Winkler verlässt das Haus Poster",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/frau-winkler-verlasst-das-haus.json?id=frau-winkler-verlasst-das-haus",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -3118,10 +2928,10 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/NAZA - Poster.jpg",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/naza.json?id=naza",
+   "image": null,
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
-   "description": null,
+   "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
   },
   {
@@ -3251,8 +3061,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Sinn und Sinnlichkeit 2026 Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/sinn-und-sinnlichkeit-2026.json?id=sinn-und-sinnlichkeit-2026",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Sinn und Sinnlichkeit 2026 Poster",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/sinn-und-sinnlichkeit-2026.json?id=sinn-und-sinnlichkeit-2026",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -3271,7 +3081,7 @@
    "price": null,
    "duration_min": null,
    "image": null,
-   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
    "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
@@ -3289,8 +3099,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Digger Poster.jpg",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/digger.json?id=digger",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Digger Poster.jpg",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/digger.json?id=digger",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -3347,8 +3157,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Alte Liebe Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/alte-liebe.json?id=alte-liebe",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Alte Liebe Poster",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/alte-liebe.json?id=alte-liebe",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -3366,8 +3176,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Fatherland - Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/vaterland.json?id=vaterland",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Fatherland - Poster",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/vaterland.json?id=vaterland",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -3480,8 +3290,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Sinn und Sinnlichkeit 2026 Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/sinn-und-sinnlichkeit-2026.json?id=sinn-und-sinnlichkeit-2026",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Sinn und Sinnlichkeit 2026 Poster",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/sinn-und-sinnlichkeit-2026.json?id=sinn-und-sinnlichkeit-2026",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -3500,7 +3310,7 @@
    "price": null,
    "duration_min": null,
    "image": null,
-   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
    "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
@@ -3519,7 +3329,7 @@
    "price": null,
    "duration_min": null,
    "image": null,
-   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
    "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
@@ -3556,8 +3366,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Digger Poster.jpg",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/digger.json?id=digger",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Digger Poster.jpg",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/digger.json?id=digger",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -3575,8 +3385,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/SOCIALRECKONING_Mainart_1SHT_Print_GER_A3_300dpi_CMYK.jpg",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/the-social-reckoning.json?id=the-social-reckoning",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/SOCIALRECKONING_Mainart_1SHT_Print_GER_A3_300dpi_CMYK.jpg",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/the-social-reckoning.json?id=the-social-reckoning",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -3594,8 +3404,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Primetime - Poster.jpg",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/primetime.json?id=primetime",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Primetime - Poster.jpg",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/primetime.json?id=primetime",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -3617,27 +3427,6 @@
    "url": "https://www.museum-lichtspiele.de/detail/126442/Digger",
    "ticket_url": "https://www.museum-lichtspiele.de/ticket?l=%2Fticket%3Fl%3D*kinoheld*%25250AcinemaPath%25253A%252520%252526apos%25253BKino-M%2525FCnchen%252FMuseum%25252520Lichtspiele%25252520M%2525FCnchen%252526apos%25253B%25252C%25250Atarget%25253A%252520%252526apos%25253Bself%252526apos%25253B%25252C%25250AnoChange%25253A%252520true%25252C%25250Arb%25253A%252520%252526apos%25253B1%252526apos%25253B%25252C%25250Alang%25253A%252520%252526apos%25253Bde%252526apos%25253B%25252C%25250Amode%25253A%252520%252526apos%25253Bwidget%252526apos%25253B%25252C%25250AshowId%25253A%252520%252526apos%25253B3681224382%252526apos%25253B",
    "description": "Museum Lichtspiele - Lilienstrasse 2, 81669 München: Digger | Aktuelles Kinoprogramm, Kino, Film- und Kino-Infos, Online-Tickets, News, Events und vieles mehr...",
-   "source": "page"
-  },
-  {
-   "id": "459d824dfbff",
-   "venue_id": "city-kino-atelier",
-   "title": "Alte Liebe",
-   "subtitle": null,
-   "start": "2026-10-21T14:00:00+02:00",
-   "time_tbd": false,
-   "stage": null,
-   "genre": "Film",
-   "tags": [
-    "DF"
-   ],
-   "status": "unknown",
-   "price": null,
-   "duration_min": 111,
-   "image": "https://images.ctfassets.net/4mws6uyas4ta/attdLAn55sADmWklJ/40c382697d21f36fd80f8d1e57c349f1/backdrop_2560x1440_1791204287082.jpg?w=960&q=75",
-   "url": "https://www.city-kinos.de/filme/alte-liebe",
-   "ticket_url": null,
-   "description": "Der neue Film von Andreas Dresen",
    "source": "page"
   },
   {
@@ -3731,7 +3520,7 @@
    "duration_min": 109,
    "image": "https://www.museum-lichtspiele.de/images/Breite_400px_RGB/p_125195.jpg?v=1790473826",
    "url": "https://www.museum-lichtspiele.de/detail/125195/Forgotten%20Island",
-   "ticket_url": "https://www.museum-lichtspiele.de/ticket?l=%2Fticket%3Fl%3D*kinoheld*%25250AcinemaPath%25253A%252520%252526apos%25253BKino-M%2525FCnchen%252FMuseum%25252520Lichtspiele%25252520M%2525FCnchen%252526apos%25253B%25252C%25250Atarget%25253A%252520%252526apos%25253Bself%252526apos%25253B%25252C%25250AnoChange%25253A%252520true%25252C%25250Arb%25253A%252520%252526apos%25253B1%252526apos%25253B%25252C%25250Alang%25253A%252520%252526apos%25253Bde%252526apos%25253B%25252C%25250Amode%25253A%252520%252526apos%25253Bwidget%252526apos%25253B%25252C%25250AshowId%25253A%252520%252526apos%25253B3681216977%252526apos%25253B",
+   "ticket_url": null,
    "description": "Museum Lichtspiele - Lilienstrasse 2, 81669 München: Forgotten Island | Aktuelles Kinoprogramm, Kino, Film- und Kino-Infos, Online-Tickets, News, Events und vieles mehr...",
    "source": "page"
   },
@@ -3774,48 +3563,6 @@
    "source": "json"
   },
   {
-   "id": "84726faa72ea",
-   "venue_id": "city-kino-atelier",
-   "title": "Sinn und Sinnlichkeit (2026)",
-   "subtitle": null,
-   "start": "2026-10-21T14:20:00+02:00",
-   "time_tbd": false,
-   "stage": null,
-   "genre": "Film",
-   "tags": [
-    "DF"
-   ],
-   "status": "unknown",
-   "price": null,
-   "duration_min": 132,
-   "image": "https://images.ctfassets.net/4mws6uyas4ta/attWRoL2l3uOcVD4E/63eafde20ce69aa6d81e1b36aef24431/Sinn_und_Sinnlichkeit_2026?w=960&q=75",
-   "url": "https://www.city-kinos.de/filme/sinn-und-sinnlichkeit-2026",
-   "ticket_url": null,
-   "description": "Zeitlose Geschichte über Liebe und Schwesternschaft",
-   "source": "page"
-  },
-  {
-   "id": "a4bce4656c25",
-   "venue_id": "city-kino-atelier",
-   "title": "Vaterland",
-   "subtitle": null,
-   "start": "2026-10-21T14:30:00+02:00",
-   "time_tbd": false,
-   "stage": null,
-   "genre": "Film",
-   "tags": [
-    "DF"
-   ],
-   "status": "unknown",
-   "price": null,
-   "duration_min": 82,
-   "image": "https://images.ctfassets.net/4mws6uyas4ta/attdg2bhw0C1m3ZWr/6b659796223f57e6b3b04a3f6ecb5ea6/Fatherland?w=960&q=75",
-   "url": "https://www.city-kinos.de/filme/vaterland",
-   "ticket_url": null,
-   "description": "Gewinner des Regie-Preises in Cannes mit Sandra Hüller",
-   "source": "page"
-  },
-  {
    "id": "c20e50205fb6",
    "venue_id": "museum-lichtspiele",
    "title": "Bibi Blocksberg - Die total verhexte Zeitreise",
@@ -3830,7 +3577,7 @@
    "duration_min": 90,
    "image": "https://www.museum-lichtspiele.de/images/Breite_400px_RGB/p_120454.jpg?v=1788491126",
    "url": "https://www.museum-lichtspiele.de/detail/120454/Bibi%20Blocksberg%20-%20Die%20total%20verhexte%20Zeitreise",
-   "ticket_url": "https://www.museum-lichtspiele.de/ticket?l=%2Fticket%3Fl%3D*kinoheld*%25250AcinemaPath%25253A%252520%252526apos%25253BKino-M%2525FCnchen%252FMuseum%25252520Lichtspiele%25252520M%2525FCnchen%252526apos%25253B%25252C%25250Atarget%25253A%252520%252526apos%25253Bself%252526apos%25253B%25252C%25250AnoChange%25253A%252520true%25252C%25250Arb%25253A%252520%252526apos%25253B1%252526apos%25253B%25252C%25250Alang%25253A%252520%252526apos%25253Bde%252526apos%25253B%25252C%25250Amode%25253A%252520%252526apos%25253Bwidget%252526apos%25253B%25252C%25250AshowId%25253A%252520%252526apos%25253B3681331917%252526apos%25253B",
+   "ticket_url": null,
    "description": "Museum Lichtspiele - Lilienstrasse 2, 81669 München: Bibi Blocksberg - Die total verhexte Zeitreise | Aktuelles Kinoprogramm, Kino, Film- und Kino-Infos, Online-Tickets, News, Events und vieles mehr...",
    "source": "page"
   },
@@ -3849,7 +3596,7 @@
    "duration_min": 100,
    "image": "https://www.museum-lichtspiele.de/images/Breite_400px_RGB/p_127964.jpg?v=1788491138",
    "url": "https://www.museum-lichtspiele.de/detail/127964/Emil%20und%20die%20Detektive",
-   "ticket_url": "https://www.museum-lichtspiele.de/ticket?l=%2Fticket%3Fl%3D*kinoheld*%25250AcinemaPath%25253A%252520%252526apos%25253BKino-M%2525FCnchen%252FMuseum%25252520Lichtspiele%25252520M%2525FCnchen%252526apos%25253B%25252C%25250Atarget%25253A%252520%252526apos%25253Bself%252526apos%25253B%25252C%25250AnoChange%25253A%252520true%25252C%25250Arb%25253A%252520%252526apos%25253B1%252526apos%25253B%25252C%25250Alang%25253A%252520%252526apos%25253Bde%252526apos%25253B%25252C%25250Amode%25253A%252520%252526apos%25253Bwidget%252526apos%25253B%25252C%25250AshowId%25253A%252520%252526apos%25253B3681305530%252526apos%25253B",
+   "ticket_url": "https://www.museum-lichtspiele.de/ticket?l=%2Fticket%3Fl%3D*kinoheld*%25250AcinemaPath%25253A%252520%252526apos%25253BKino-M%2525FCnchen%252FMuseum%25252520Lichtspiele%25252520M%2525FCnchen%252526apos%25253B%25252C%25250Atarget%25253A%252520%252526apos%25253Bself%252526apos%25253B%25252C%25250AnoChange%25253A%252520true%25252C%25250Arb%25253A%252520%252526apos%25253B1%252526apos%25253B%25252C%25250Alang%25253A%252520%252526apos%25253Bde%252526apos%25253B%25252C%25250Amode%25253A%252520%252526apos%25253Bwidget%252526apos%25253B%25252C%25250AshowId%25253A%252520%252526apos%25253B3681305545%252526apos%25253B",
    "description": "Museum Lichtspiele - Lilienstrasse 2, 81669 München: Emil und die Detektive | Aktuelles Kinoprogramm, Kino, Film- und Kino-Infos, Online-Tickets, News, Events und vieles mehr...",
    "source": "page"
   },
@@ -3887,29 +3634,8 @@
    "duration_min": 82,
    "image": "https://www.museum-lichtspiele.de/images/Breite_400px_RGB/p_129094.jpg?v=1788489119",
    "url": "https://www.museum-lichtspiele.de/detail/129094/Monster%20Mia",
-   "ticket_url": "https://www.museum-lichtspiele.de/ticket?l=%2Fticket%3Fl%3D*kinoheld*%25250AcinemaPath%25253A%252520%252526apos%25253BKino-M%2525FCnchen%252FMuseum%25252520Lichtspiele%25252520M%2525FCnchen%252526apos%25253B%25252C%25250Atarget%25253A%252520%252526apos%25253Bself%252526apos%25253B%25252C%25250AnoChange%25253A%252520true%25252C%25250Arb%25253A%252520%252526apos%25253B1%252526apos%25253B%25252C%25250Alang%25253A%252520%252526apos%25253Bde%252526apos%25253B%25252C%25250Amode%25253A%252520%252526apos%25253Bwidget%252526apos%25253B%25252C%25250AshowId%25253A%252520%252526apos%25253B3681261259%252526apos%25253B",
-   "description": "Museum Lichtspiele - Lilienstrasse 2, 81669 München: Monster Mia | Aktuelles Kinoprogramm, Kino, Film- und Kino-Infos, Online-Tickets, News, Events und vieles mehr...",
-   "source": "page"
-  },
-  {
-   "id": "a44da472982a",
-   "venue_id": "city-kino-atelier",
-   "title": "Heimsuchung - Eine Jahrhundertgeschichte",
-   "subtitle": null,
-   "start": "2026-10-21T14:45:00+02:00",
-   "time_tbd": false,
-   "stage": null,
-   "genre": "Film",
-   "tags": [
-    "DF"
-   ],
-   "status": "unknown",
-   "price": null,
-   "duration_min": 121,
-   "image": "https://images.ctfassets.net/4mws6uyas4ta/attghhOm2Oedhr1Q7/d6d598c765e5649c27949238942510a0/Heimsuchung?w=960&q=75",
-   "url": "https://www.city-kinos.de/filme/heimsuchung-eine-jahrhundertgeschichte",
    "ticket_url": null,
-   "description": "Von Oscar-Preisträger Volker Schlöndorff, mit Lars Eidinger",
+   "description": "Museum Lichtspiele - Lilienstrasse 2, 81669 München: Monster Mia | Aktuelles Kinoprogramm, Kino, Film- und Kino-Infos, Online-Tickets, News, Events und vieles mehr...",
    "source": "page"
   },
   {
@@ -3944,8 +3670,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Sinn und Sinnlichkeit 2026 Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/sinn-und-sinnlichkeit-2026.json?id=sinn-und-sinnlichkeit-2026",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Sinn und Sinnlichkeit 2026 Poster",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/sinn-und-sinnlichkeit-2026.json?id=sinn-und-sinnlichkeit-2026",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -3963,8 +3689,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Fatherland - Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/vaterland.json?id=vaterland",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Fatherland - Poster",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/vaterland.json?id=vaterland",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -3983,7 +3709,7 @@
    "price": null,
    "duration_min": null,
    "image": null,
-   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
    "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
@@ -4065,27 +3791,6 @@
    "source": "json"
   },
   {
-   "id": "5792e878f472",
-   "venue_id": "city-kino-atelier",
-   "title": "Frau Winkler verlässt das Haus",
-   "subtitle": null,
-   "start": "2026-10-21T16:15:00+02:00",
-   "time_tbd": false,
-   "stage": null,
-   "genre": "Film",
-   "tags": [
-    "DF"
-   ],
-   "status": "unknown",
-   "price": null,
-   "duration_min": 108,
-   "image": "https://images.ctfassets.net/4mws6uyas4ta/att0t5jcM3oFUfK63/ed094fb1bba6685a151a25fd0d05b9ee/Frau_Winkler_verl%C3%A4sst_das_Haus?w=960&q=75",
-   "url": "https://www.city-kinos.de/filme/frau-winkler-verlasst-das-haus",
-   "ticket_url": null,
-   "description": "Der neue Film von Doris Dörrie",
-   "source": "page"
-  },
-  {
    "id": "6099279ee940",
    "venue_id": "museum-lichtspiele",
    "title": "Shaun the Sheep: The Beast of Mossy Bottom",
@@ -4136,32 +3841,11 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Alte Liebe Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/alte-liebe.json?id=alte-liebe",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Alte Liebe Poster",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/alte-liebe.json?id=alte-liebe",
    "ticket_url": null,
    "description": null,
    "source": "json"
-  },
-  {
-   "id": "267de209fb06",
-   "venue_id": "city-kino-atelier",
-   "title": "Digger",
-   "subtitle": null,
-   "start": "2026-10-21T16:30:00+02:00",
-   "time_tbd": false,
-   "stage": null,
-   "genre": "Film",
-   "tags": [
-    "OmU"
-   ],
-   "status": "unknown",
-   "price": null,
-   "duration_min": 129,
-   "image": "https://images.ctfassets.net/4mws6uyas4ta/attO0Mya1gJIi7lJa/7d226b8c77333d37cfead9835204fecb/Digger.jpeg?w=960&q=75",
-   "url": "https://www.city-kinos.de/filme/digger",
-   "ticket_url": null,
-   "description": "Von Oscar-Gewinner Alejandro G. Iñárritu",
-   "source": "page"
   },
   {
    "id": "a77c9af4dcb7",
@@ -4178,7 +3862,7 @@
    "duration_min": 132,
    "image": "https://www.museum-lichtspiele.de/images/Breite_400px_RGB/p_122590.jpg?v=1788772903",
    "url": "https://www.museum-lichtspiele.de/detail/122590/Sense%20and%20Sensibility",
-   "ticket_url": "https://www.museum-lichtspiele.de/ticket?l=%2Fticket%3Fl%3D*kinoheld*%25250AcinemaPath%25253A%252520%252526apos%25253BKino-M%2525FCnchen%252FMuseum%25252520Lichtspiele%25252520M%2525FCnchen%252526apos%25253B%25252C%25250Atarget%25253A%252520%252526apos%25253Bself%252526apos%25253B%25252C%25250AnoChange%25253A%252520true%25252C%25250Arb%25253A%252520%252526apos%25253B1%252526apos%25253B%25252C%25250Alang%25253A%252520%252526apos%25253Bde%252526apos%25253B%25252C%25250Amode%25253A%252520%252526apos%25253Bwidget%252526apos%25253B%25252C%25250AshowId%25253A%252520%252526apos%25253B3681332134%252526apos%25253B",
+   "ticket_url": null,
    "description": "Museum Lichtspiele - Lilienstrasse 2, 81669 München: Sense and Sensibility | Aktuelles Kinoprogramm, Kino, Film- und Kino-Infos, Online-Tickets, News, Events und vieles mehr...",
    "source": "page"
   },
@@ -4197,7 +3881,7 @@
    "duration_min": 79,
    "image": "https://www.museum-lichtspiele.de/images/Breite_400px_RGB/p_125192.jpg?v=1788491552",
    "url": "https://www.museum-lichtspiele.de/detail/125192/Shaun%20the%20Sheep%3A%20The%20Beast%20of%20Mossy%20Bottom",
-   "ticket_url": "https://www.museum-lichtspiele.de/ticket?l=%2Fticket%3Fl%3D*kinoheld*%25250AcinemaPath%25253A%252520%252526apos%25253BKino-M%2525FCnchen%252FMuseum%25252520Lichtspiele%25252520M%2525FCnchen%252526apos%25253B%25252C%25250Atarget%25253A%252520%252526apos%25253Bself%252526apos%25253B%25252C%25250AnoChange%25253A%252520true%25252C%25250Arb%25253A%252520%252526apos%25253B1%252526apos%25253B%25252C%25250Alang%25253A%252520%252526apos%25253Bde%252526apos%25253B%25252C%25250Amode%25253A%252520%252526apos%25253Bwidget%252526apos%25253B%25252C%25250AshowId%25253A%252520%252526apos%25253B3681288163%252526apos%25253B",
+   "ticket_url": null,
    "description": "Museum Lichtspiele - Lilienstrasse 2, 81669 München: Shaun the Sheep: The Beast of Mossy Bottom | Aktuelles Kinoprogramm, Kino, Film- und Kino-Infos, Online-Tickets, News, Events und vieles mehr...",
    "source": "page"
   },
@@ -4216,7 +3900,7 @@
    "duration_min": 113,
    "image": "https://www.museum-lichtspiele.de/images/Breite_400px_RGB/p_125198.jpg?v=1791251861",
    "url": "https://www.museum-lichtspiele.de/detail/125198/The%20Social%20Reckoning",
-   "ticket_url": "https://www.museum-lichtspiele.de/ticket?l=%2Fticket%3Fl%3D*kinoheld*%25250AcinemaPath%25253A%252520%252526apos%25253BKino-M%2525FCnchen%252FMuseum%25252520Lichtspiele%25252520M%2525FCnchen%252526apos%25253B%25252C%25250Atarget%25253A%252520%252526apos%25253Bself%252526apos%25253B%25252C%25250AnoChange%25253A%252520true%25252C%25250Arb%25253A%252520%252526apos%25253B1%252526apos%25253B%25252C%25250Alang%25253A%252520%252526apos%25253Bde%252526apos%25253B%25252C%25250Amode%25253A%252520%252526apos%25253Bwidget%252526apos%25253B%25252C%25250AshowId%25253A%252520%252526apos%25253B3681217019%252526apos%25253B",
+   "ticket_url": null,
    "description": "Museum Lichtspiele - Lilienstrasse 2, 81669 München: The Social Reckoning | Aktuelles Kinoprogramm, Kino, Film- und Kino-Infos, Online-Tickets, News, Events und vieles mehr...",
    "source": "page"
   },
@@ -4254,7 +3938,7 @@
    "duration_min": 173,
    "image": "https://www.museum-lichtspiele.de/images/Breite_400px_RGB/p_120313X18072026041803.jpg",
    "url": "https://www.museum-lichtspiele.de/detail/120313/The%20Odyssey",
-   "ticket_url": "https://www.museum-lichtspiele.de/ticket?l=%2Fticket%3Fl%3D*kinoheld*%25250AcinemaPath%25253A%252520%252526apos%25253BKino-M%2525FCnchen%252FMuseum%25252520Lichtspiele%25252520M%2525FCnchen%252526apos%25253B%25252C%25250Atarget%25253A%252520%252526apos%25253Bself%252526apos%25253B%25252C%25250AnoChange%25253A%252520true%25252C%25250Arb%25253A%252520%252526apos%25253B1%252526apos%25253B%25252C%25250Alang%25253A%252520%252526apos%25253Bde%252526apos%25253B%25252C%25250Amode%25253A%252520%252526apos%25253Bwidget%252526apos%25253B%25252C%25250AshowId%25253A%252520%252526apos%25253B3681307792%252526apos%25253B",
+   "ticket_url": null,
    "description": "Museum Lichtspiele - Lilienstrasse 2, 81669 München: The Odyssey | Aktuelles Kinoprogramm, Kino, Film- und Kino-Infos, Online-Tickets, News, Events und vieles mehr...",
    "source": "page"
   },
@@ -4271,8 +3955,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Frau Winkler verlässt das Haus Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/frau-winkler-verlasst-das-haus.json?id=frau-winkler-verlasst-das-haus",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Frau Winkler verlässt das Haus Poster",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/frau-winkler-verlasst-das-haus.json?id=frau-winkler-verlasst-das-haus",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -4294,27 +3978,6 @@
    "url": "https://www.museum-lichtspiele.de/detail/122590/Sense%20and%20Sensibility",
    "ticket_url": "https://www.museum-lichtspiele.de/ticket?l=%2Fticket%3Fl%3D*kinoheld*%25250AcinemaPath%25253A%252520%252526apos%25253BKino-M%2525FCnchen%252FMuseum%25252520Lichtspiele%25252520M%2525FCnchen%252526apos%25253B%25252C%25250Atarget%25253A%252520%252526apos%25253Bself%252526apos%25253B%25252C%25250AnoChange%25253A%252520true%25252C%25250Arb%25253A%252520%252526apos%25253B1%252526apos%25253B%25252C%25250Alang%25253A%252520%252526apos%25253Bde%252526apos%25253B%25252C%25250Amode%25253A%252520%252526apos%25253Bwidget%252526apos%25253B%25252C%25250AshowId%25253A%252520%252526apos%25253B3681306781%252526apos%25253B",
    "description": "Museum Lichtspiele - Lilienstrasse 2, 81669 München: Sense and Sensibility | Aktuelles Kinoprogramm, Kino, Film- und Kino-Infos, Online-Tickets, News, Events und vieles mehr...",
-   "source": "page"
-  },
-  {
-   "id": "0c163e7c7fc1",
-   "venue_id": "city-kino-atelier",
-   "title": "Sinn und Sinnlichkeit (2026)",
-   "subtitle": null,
-   "start": "2026-10-21T17:15:00+02:00",
-   "time_tbd": false,
-   "stage": null,
-   "genre": "Film",
-   "tags": [
-    "OmU"
-   ],
-   "status": "unknown",
-   "price": null,
-   "duration_min": 132,
-   "image": "https://images.ctfassets.net/4mws6uyas4ta/attWRoL2l3uOcVD4E/63eafde20ce69aa6d81e1b36aef24431/Sinn_und_Sinnlichkeit_2026?w=960&q=75",
-   "url": "https://www.city-kinos.de/filme/sinn-und-sinnlichkeit-2026",
-   "ticket_url": null,
-   "description": "Zeitlose Geschichte über Liebe und Schwesternschaft",
    "source": "page"
   },
   {
@@ -4351,10 +4014,10 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/NAZA - Poster.jpg",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/naza.json?id=naza",
+   "image": null,
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
-   "description": null,
+   "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
   },
   {
@@ -4484,8 +4147,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Sinn und Sinnlichkeit 2026 Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/sinn-und-sinnlichkeit-2026.json?id=sinn-und-sinnlichkeit-2026",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Sinn und Sinnlichkeit 2026 Poster",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/sinn-und-sinnlichkeit-2026.json?id=sinn-und-sinnlichkeit-2026",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -4525,7 +4188,7 @@
    "price": null,
    "duration_min": null,
    "image": null,
-   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
    "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
@@ -4545,7 +4208,7 @@
    "duration_min": 97,
    "image": "https://www.museum-lichtspiele.de/images/Breite_400px_RGB/p_131098.jpg?v=1788573426",
    "url": "https://www.museum-lichtspiele.de/detail/131098/The%20Thing%20with%20Feathers",
-   "ticket_url": "https://www.museum-lichtspiele.de/ticket?l=%2Fticket%3Fl%3D*kinoheld*%25250AcinemaPath%25253A%252520%252526apos%25253BKino-M%2525FCnchen%252FMuseum%25252520Lichtspiele%25252520M%2525FCnchen%252526apos%25253B%25252C%25250Atarget%25253A%252520%252526apos%25253Bself%252526apos%25253B%25252C%25250AnoChange%25253A%252520true%25252C%25250Arb%25253A%252520%252526apos%25253B1%252526apos%25253B%25252C%25250Alang%25253A%252520%252526apos%25253Bde%252526apos%25253B%25252C%25250Amode%25253A%252520%252526apos%25253Bwidget%252526apos%25253B%25252C%25250AshowId%25253A%252520%252526apos%25253B3681288107%252526apos%25253B",
+   "ticket_url": null,
    "description": "Museum Lichtspiele - Lilienstrasse 2, 81669 München: The Thing with Feathers | Aktuelles Kinoprogramm, Kino, Film- und Kino-Infos, Online-Tickets, News, Events und vieles mehr...",
    "source": "page"
   },
@@ -4583,8 +4246,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Digger Poster.jpg",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/digger.json?id=digger",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Digger Poster.jpg",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/digger.json?id=digger",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -4609,6 +4272,27 @@
    "source": "page"
   },
   {
+   "id": "befa1615f7c8",
+   "venue_id": "city-kino-atelier",
+   "title": "The Social Reckoning",
+   "subtitle": null,
+   "start": "2026-10-21T19:15:00+02:00",
+   "time_tbd": false,
+   "stage": null,
+   "genre": "Film",
+   "tags": [
+    "OmU"
+   ],
+   "status": "unknown",
+   "price": null,
+   "duration_min": 112,
+   "image": "https://images.ctfassets.net/4mws6uyas4ta/attaRcq7Oj5wSZtAq/9f3a150d0c4dd55cc3a2b49a3ce67afd/The_Social_Reckoning?w=960&q=75",
+   "url": "https://www.city-kinos.de/filme/the-social-reckoning",
+   "ticket_url": null,
+   "description": "Von THE SOCIAL NETWORK-Regisseur Aaron Sorkin",
+   "source": "page"
+  },
+  {
    "id": "2a3ac52d3a6e",
    "venue_id": "city-kino-atelier",
    "title": "Alte Liebe",
@@ -4621,8 +4305,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Alte Liebe Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/alte-liebe.json?id=alte-liebe",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Alte Liebe Poster",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/alte-liebe.json?id=alte-liebe",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -4640,8 +4324,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Fatherland - Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/vaterland.json?id=vaterland",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Fatherland - Poster",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/vaterland.json?id=vaterland",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -5001,6 +4685,27 @@
    "source": "page"
   },
   {
+   "id": "e6c513e11a26",
+   "venue_id": "city-kino-atelier",
+   "title": "Primetime",
+   "subtitle": null,
+   "start": "2026-10-21T21:00:00+02:00",
+   "time_tbd": false,
+   "stage": null,
+   "genre": "Film",
+   "tags": [
+    "OmU"
+   ],
+   "status": "unknown",
+   "price": null,
+   "duration_min": 110,
+   "image": "https://images.ctfassets.net/4mws6uyas4ta/attvJHlVTHE8eNboH/2acc1955389ce3e427b7db7cf0b6613f/Primetime?w=960&q=75",
+   "url": "https://www.city-kinos.de/filme/primetime",
+   "ticket_url": null,
+   "description": "Nervenzerreißender Thriller mit Robert Pattinson",
+   "source": "page"
+  },
+  {
    "id": "d8437a2311b6",
    "venue_id": "museum-lichtspiele",
    "title": "Verity",
@@ -5033,7 +4738,7 @@
    "price": null,
    "duration_min": null,
    "image": null,
-   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
    "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
@@ -5051,8 +4756,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Sinn und Sinnlichkeit 2026 Poster",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/sinn-und-sinnlichkeit-2026.json?id=sinn-und-sinnlichkeit-2026",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Sinn und Sinnlichkeit 2026 Poster",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/sinn-und-sinnlichkeit-2026.json?id=sinn-und-sinnlichkeit-2026",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -5071,7 +4776,7 @@
    "price": null,
    "duration_min": null,
    "image": null,
-   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
    "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
@@ -5090,7 +4795,7 @@
    "price": null,
    "duration_min": null,
    "image": null,
-   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
    "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
@@ -5108,8 +4813,8 @@
    "status": "unknown",
    "price": null,
    "duration_min": null,
-   "image": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/Primetime - Poster.jpg",
-   "url": "https://www.city-kinos.de/_next/data/zibBa0kVK7qeoITFR_ynZ/de/filme/primetime.json?id=primetime",
+   "image": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/Primetime - Poster.jpg",
+   "url": "https://www.city-kinos.de/_next/data/rSo3uoieQri2mP2sjlUEm/de/filme/primetime.json?id=primetime",
    "ticket_url": null,
    "description": null,
    "source": "json"
@@ -5128,7 +4833,7 @@
    "price": null,
    "duration_min": null,
    "image": null,
-   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
    "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
@@ -5238,12 +4943,12 @@
    "stage": "Residenztheater",
    "genre": "Schauspiel",
    "tags": [],
-   "status": "few",
+   "status": "sold_out",
    "price": null,
    "duration_min": 120,
    "image": "https://www.residenztheater.de/media/user_upload/03_Resi_fuer_alle/Sonstiges/Werkstatt_8404w.jpg",
    "url": "https://www.residenztheater.de/stuecke/detail/resi-werkstatt",
-   "ticket_url": "https://tickets.staatstheater.bayern/rth.webshop/webticket/shop?event=43122",
+   "ticket_url": null,
    "description": "Einmal im Monat öffnen wir die Türen zur «Resi-Werkstatt», unserem Workshopformat für alle, die Theater aktiv erleben möchten. In dem zweistündigen Workshop setzen Sie sich mit einer aktuellen Produktion des Spielplans auseinander. Durch",
    "source": "page"
   },
@@ -5771,7 +5476,7 @@
    "price": null,
    "duration_min": null,
    "image": null,
-   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
    "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
@@ -5790,7 +5495,7 @@
    "price": null,
    "duration_min": null,
    "image": null,
-   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
    "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
@@ -6045,7 +5750,7 @@
    "price": null,
    "duration_min": null,
    "image": null,
-   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
    "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
@@ -6064,7 +5769,7 @@
    "price": null,
    "duration_min": null,
    "image": null,
-   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
    "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
@@ -6162,7 +5867,7 @@
    "price": null,
    "duration_min": null,
    "image": null,
-   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
    "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
@@ -6181,7 +5886,7 @@
    "price": null,
    "duration_min": null,
    "image": null,
-   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
    "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
@@ -6218,12 +5923,12 @@
    "tags": [
     "English surtitles"
    ],
-   "status": "few",
+   "status": "sold_out",
    "price": null,
    "duration_min": 90,
    "image": "https://www.residenztheater.de/media/user_upload/01_Stuecke/2024_2025/Blind/Web_Update/Header_Blind_6.png",
    "url": "https://www.residenztheater.de/stuecke/detail/blind",
-   "ticket_url": "https://tickets.staatstheater.bayern/rth.webshop/webticket/shop?event=43117",
+   "ticket_url": null,
    "description": "Erfolgsdramatikerin Lot Vekemans trifft mit ihrem neuen Stück den Nerv der Zeit. Mit großer Sensibilität erzählt sie von Vater und Tochter, gespielt von Manfred Zapatka und Juliane Köhler, die unvereinbar scheinende Haltungen zu",
    "source": "page"
   },
@@ -6885,7 +6590,7 @@
    "price": null,
    "duration_min": null,
    "image": null,
-   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
    "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
@@ -6904,7 +6609,7 @@
    "price": null,
    "duration_min": null,
    "image": null,
-   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
    "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
@@ -7258,7 +6963,7 @@
    "price": null,
    "duration_min": null,
    "image": null,
-   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
    "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
@@ -7277,7 +6982,7 @@
    "price": null,
    "duration_min": null,
    "image": null,
-   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
    "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
@@ -7569,12 +7274,12 @@
    "tags": [
     "Premiere"
    ],
-   "status": "sold_out",
+   "status": "few",
    "price": "29–74 €",
    "duration_min": null,
    "image": "https://www.residenztheater.de/media/user_upload/01_Stuecke/2026_2027/Faust/Web_Assets/Header_Faust.jpeg",
    "url": "https://www.residenztheater.de/stuecke/detail/faust",
-   "ticket_url": null,
+   "ticket_url": "https://tickets.staatstheater.bayern/rth.webshop/webticket/shop?event=43175",
    "description": "»Zwei Seelen wohnen, ach! in meiner Brust« – Goethes Faust beschreibt damit nicht nur ein persönliches Drama, sondern eine Erfahrung moderner Subjektivität: Das Ich erscheint als Gefüge widersprüchlicher Kräfte. Goethes Drama zeigt den",
    "source": "page"
   },
@@ -7991,7 +7696,7 @@
    "price": null,
    "duration_min": null,
    "image": null,
-   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
    "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
@@ -8207,7 +7912,7 @@
    "price": null,
    "duration_min": null,
    "image": null,
-   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
    "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
@@ -8226,7 +7931,7 @@
    "price": null,
    "duration_min": null,
    "image": null,
-   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
    "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
@@ -9030,7 +8735,7 @@
    "price": null,
    "duration_min": null,
    "image": null,
-   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
    "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
@@ -9049,7 +8754,7 @@
    "price": null,
    "duration_min": null,
    "image": null,
-   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
+   "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
    "ticket_url": null,
    "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München.",
    "source": "json"
@@ -9742,7 +9447,7 @@
    "stage": "Residenztheater",
    "genre": "Schauspiel",
    "tags": [],
-   "status": "unknown",
+   "status": "few",
    "price": null,
    "duration_min": null,
    "image": "https://www.residenztheater.de/resiworld/user_upload/RESI_2627_web_premieren_platzhalter_6.jpg",
@@ -9845,12 +9550,12 @@
    "tags": [
     "Premiere"
    ],
-   "status": "sold_out",
+   "status": "few",
    "price": null,
    "duration_min": null,
    "image": "https://www.residenztheater.de/media/user_upload/01_Stuecke/Illus/2026_2027/RESI_2627_web_premieren_platzhalter_9.jpg",
    "url": "https://www.residenztheater.de/stuecke/detail/bambi",
-   "ticket_url": null,
+   "ticket_url": "https://tickets.staatstheater.bayern/rth.webshop/webticket/shop?event=43216",
    "description": "Das Rehkitz Bambi ist keineswegs eine Schöpfung von Walt Disney, sondern die des Wiener Schriftstellers Felix Salten. Als passionierter Jäger schildert er in seiner »Lebensgeschichte aus dem Walde« von 1922 den rauen Kreislauf des Lebens von",
    "source": "page"
   },
@@ -10241,7 +9946,7 @@
    "tags": [
     "English surtitles"
    ],
-   "status": "unknown",
+   "status": "few",
    "price": "25–69 €",
    "duration_min": 190,
    "image": "https://www.residenztheater.de/media/user_upload/01_Stuecke/2026_2027/Koenig_Lear/Web_Assets/Lear-1-Header.png",

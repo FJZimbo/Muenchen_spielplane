@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-17T04:43:48+00:00",
+ "generated_at": "2026-10-17T16:23:04+00:00",
  "venues": {
   "residenztheater": {
    "name": "Residenztheater",
@@ -18,24 +18,24 @@
     {
      "url": "https://www.residenztheater.de/spielplan",
      "context": null,
-     "anchors": 31,
-     "cards": 31,
+     "anchors": 30,
+     "cards": 30,
      "no_date": 0,
      "no_time": 0,
      "no_title": 0,
      "pattern": "calendarics\\.ics\\?.*?activity(?:%5D|\\])?=(\\d+)",
-     "events": 31
+     "events": 30
     },
     {
      "url": "https://www.residenztheater.de/spielplan?month=2026-10&cHash=7630e6566b28d541512ed3aa12ba7b29",
      "context": null,
-     "anchors": 31,
-     "cards": 31,
+     "anchors": 30,
+     "cards": 30,
      "no_date": 0,
      "no_time": 0,
      "no_title": 0,
      "pattern": "calendarics\\.ics\\?.*?activity(?:%5D|\\])?=(\\d+)",
-     "events": 31
+     "events": 30
     },
     {
      "url": "https://www.residenztheater.de/spielplan?month=2026-11&cHash=50e34a17963e7f2baea7a1e33d4934de",
@@ -126,10 +126,10 @@
      "events": 2
     }
    ],
-   "count": 102,
-   "seconds": 39.1,
+   "count": 101,
+   "seconds": 36.1,
    "ok": true,
-   "last_success": "2026-10-17T06:35+02:00",
+   "last_success": "2026-10-17T18:15+02:00",
    "first": "2026-10-17",
    "last": "2027-06-19",
    "sold_out": 13,
@@ -162,12 +162,12 @@
     }
    ],
    "count": 157,
-   "seconds": 13.5,
+   "seconds": 12.6,
    "ok": true,
-   "last_success": "2026-10-17T06:35+02:00",
+   "last_success": "2026-10-17T18:15+02:00",
    "first": "2026-10-17",
    "last": "2027-11-17",
-   "sold_out": 7,
+   "sold_out": 8,
    "with_image": 0
   },
   "volkstheater": {
@@ -197,9 +197,9 @@
     }
    ],
    "count": 2,
-   "seconds": 9.0,
+   "seconds": 8.7,
    "ok": true,
-   "last_success": "2026-10-17T06:35+02:00",
+   "last_success": "2026-10-17T18:15+02:00",
    "first": "2026-10-17",
    "last": "2026-10-17",
    "sold_out": 0,
@@ -577,9 +577,9 @@
     }
    ],
    "count": 211,
-   "seconds": 390.3,
+   "seconds": 371.0,
    "ok": true,
-   "last_success": "2026-10-17T06:35+02:00",
+   "last_success": "2026-10-17T18:15+02:00",
    "first": "2026-10-17",
    "last": "2027-10-18",
    "sold_out": 0,
@@ -612,9 +612,9 @@
     }
    ],
    "count": 24,
-   "seconds": 8.5,
+   "seconds": 8.0,
    "ok": true,
-   "last_success": "2026-10-17T06:35+02:00",
+   "last_success": "2026-10-17T18:15+02:00",
    "first": "2026-10-17",
    "last": "2026-11-15",
    "sold_out": 0,
@@ -640,7 +640,7 @@
     }
    ],
    "count": 0,
-   "seconds": 2.8,
+   "seconds": 2.4,
    "ok": false,
    "last_success": null,
    "kept_previous": 0
@@ -679,10 +679,10 @@
     {
      "url": "https://www.museum-lichtspiele.de/",
      "context": null,
-     "film_links": 40,
-     "blocks": 39,
+     "film_links": 29,
+     "blocks": 28,
      "screenings": 9,
-     "undated_times": 14,
+     "undated_times": 9,
      "events": 9
     },
     {
@@ -691,9 +691,9 @@
     }
    ],
    "count": 171,
-   "seconds": 17.6,
+   "seconds": 17.8,
    "ok": true,
-   "last_success": "2026-10-17T06:35+02:00",
+   "last_success": "2026-10-17T18:15+02:00",
    "first": "2026-10-17",
    "last": "2027-01-09",
    "sold_out": 0,
@@ -714,27 +714,27 @@
    "errors": [],
    "stats": [
     {
-     "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=heimsuchung-eine-jahrhundertgeschichte",
+     "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-17&tab=daily&sessionsExpanded=&film=the-social-reckoning",
      "context": null,
-     "film_links": 35,
-     "blocks": 17,
-     "screenings": 13,
-     "undated_times": 4,
-     "events": 13
+     "film_links": 29,
+     "blocks": 15,
+     "screenings": 8,
+     "undated_times": 0,
+     "events": 8
     },
     {
-     "json_payloads": 11,
-     "json_events": 173
+     "json_payloads": 10,
+     "json_events": 151
     }
    ],
-   "count": 119,
-   "seconds": 7.9,
+   "count": 105,
+   "seconds": 8.3,
    "ok": true,
-   "last_success": "2026-10-17T06:35+02:00",
+   "last_success": "2026-10-17T18:15+02:00",
    "first": "2026-10-17",
    "last": "2026-11-14",
    "sold_out": 0,
-   "with_image": 79
+   "with_image": 61
   }
  }
 }
