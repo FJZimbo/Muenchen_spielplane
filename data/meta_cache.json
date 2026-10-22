@@ -1834,5 +1834,57 @@
 "https://www.museum-lichtspiele.de/detail/130183/Ali_G:_Who_Iz_I": {
 "image": "https://cineprog.de/images/MJpics/headslider/130/130183.jpg?v=1788228216",
 "description": "Museum Lichtspiele - Lilienstrasse 2, 81669 München: Ali G: Who Iz I | Aktuelles Kinoprogramm, Kino, Film- und Kino-Infos, Online-Tickets, News, Events und vieles mehr..."
+},
+"https://www.city-kinos.de/_next/data/hpf3cl4EwitkJFLB0YuAQ/de/filme/alte-liebe.json?id=alte-liebe": {
+"image": "https://www.city-kinos.de/_next/data/hpf3cl4EwitkJFLB0YuAQ/de/filme/alte-liebe.json?id=alte-liebe",
+"description": null
+},
+"https://www.city-kinos.de/_next/data/hpf3cl4EwitkJFLB0YuAQ/de/filme/digger.json?id=digger": {
+"image": "https://www.city-kinos.de/_next/data/hpf3cl4EwitkJFLB0YuAQ/de/filme/digger.json?id=digger",
+"description": null
+},
+"https://www.city-kinos.de/_next/data/hpf3cl4EwitkJFLB0YuAQ/de/filme/frau-winkler-verlasst-das-haus.json?id=frau-winkler-verlasst-das-haus": {
+"image": "https://www.city-kinos.de/_next/data/hpf3cl4EwitkJFLB0YuAQ/de/filme/frau-winkler-verlasst-das-haus.json?id=frau-winkler-verlasst-das-haus",
+"description": null
+},
+"https://www.city-kinos.de/_next/data/hpf3cl4EwitkJFLB0YuAQ/de/filme/heimsuchung-eine-jahrhundertgeschichte.json?id=heimsuchung-eine-jahrhundertgeschichte": {
+"image": "https://www.city-kinos.de/_next/data/hpf3cl4EwitkJFLB0YuAQ/de/filme/heimsuchung-eine-jahrhundertgeschichte.json?id=heimsuchung-eine-jahrhundertgeschichte",
+"description": null
+},
+"https://www.city-kinos.de/_next/data/hpf3cl4EwitkJFLB0YuAQ/de/filme/naza.json?id=naza": {
+"image": "https://www.city-kinos.de/_next/data/hpf3cl4EwitkJFLB0YuAQ/de/filme/naza.json?id=naza",
+"description": null
+},
+"https://www.city-kinos.de/_next/data/hpf3cl4EwitkJFLB0YuAQ/de/filme/primetime.json?id=primetime": {
+"image": "https://www.city-kinos.de/_next/data/hpf3cl4EwitkJFLB0YuAQ/de/filme/primetime.json?id=primetime",
+"description": null
+},
+"https://www.city-kinos.de/_next/data/hpf3cl4EwitkJFLB0YuAQ/de/filme/sinn-und-sinnlichkeit-2026.json?id=sinn-und-sinnlichkeit-2026": {
+"image": "https://www.city-kinos.de/_next/data/hpf3cl4EwitkJFLB0YuAQ/de/filme/sinn-und-sinnlichkeit-2026.json?id=sinn-und-sinnlichkeit-2026",
+"description": null
+},
+"https://www.city-kinos.de/_next/data/hpf3cl4EwitkJFLB0YuAQ/de/filme/vaterland.json?id=vaterland": {
+"image": "https://www.city-kinos.de/_next/data/hpf3cl4EwitkJFLB0YuAQ/de/filme/vaterland.json?id=vaterland",
+"description": null
+},
+"https://www.city-kinos.de/filme/liebhaberinnen": {
+"image": "https://images.ctfassets.net/4mws6uyas4ta/attPryeBjjz4fhN9x/5e3906ece91117fd3121fa5d070368b3/Liebhaberinnen",
+"description": "Verfilmung des Romans von Elfriede Jelinek"
+},
+"https://www.city-kinos.de/filme/moscas-fliegen-und-andere-gaste": {
+"image": "https://images.ctfassets.net/4mws6uyas4ta/2N8wW6oYaRN2QlwS7kykIy/f6e07397077bb104f432602e0b0170f2/Moscas_hero.jpg",
+"description": "Mexikanische Tragikomödie über eine ungewöhnliche Beziehung"
+},
+"https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-22&tab=daily&sessionsExpanded=&film=naza": {
+"image": "https://images.ctfassets.net/4mws6uyas4ta/SZfkHAvlTKBr0uwUtYdj6/24decd92e6067e9391203008245cd0c5/Open_Graph_Images_2.jpg",
+"description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München."
+},
+"https://www.muenchner-kammerspiele.de/de/programm/51934-rabbithole": {
+"image": "https://www.muenchner-kammerspiele.de/images/69b37aac-a742-4008-9902-a88beca0651a.png?w=2000",
+"description": "Rabbithole // Ein Triptychon zum NS-Unrecht von Martin Valdés-Stauber // Werkraum // Frangiskos Kakoulakis lädt in den Werk*raum. Der Schauspieler tritt auf die Bühne und erzählt, wie er sich in den vergangenen Jahren mit den Patient*innenmorden der Nazis befasst hat. Seine Recherchen führten ihn u.a. zu Prof. Michael von Cranach und nach Kaufbeuren und Haar, wo er eine erschreckende Entdeckung ma"
+},
+"https://www.muenchner-volkstheater.de/programm/extra/nacht-der-autorinnen-und-autoren-der-sueddeutschen-zeitung": {
+"image": "https://www.muenchner-volkstheater.de/sites/default/files/styles/page_16_9/public/event/main-image/2026-09/nda-keyvisual-1920x1080.png?h=d1cb525d&itok=s5_iq2wO",
+"description": null
 }
 }
