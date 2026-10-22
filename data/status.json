@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T04:45:38+00:00",
+ "generated_at": "2026-10-22T12:40:06+00:00",
  "venues": {
   "residenztheater": {
    "name": "Residenztheater",
@@ -127,12 +127,12 @@
     }
    ],
    "count": 91,
-   "seconds": 41.7,
+   "seconds": 37.6,
    "ok": true,
-   "last_success": "2026-10-22T06:37+02:00",
+   "last_success": "2026-10-22T14:32+02:00",
    "first": "2026-10-22",
    "last": "2027-06-19",
-   "sold_out": 13,
+   "sold_out": 12,
    "with_image": 0
   },
   "kammerspiele": {
@@ -162,12 +162,12 @@
     }
    ],
    "count": 145,
-   "seconds": 13.9,
+   "seconds": 11.8,
    "ok": true,
-   "last_success": "2026-10-22T06:37+02:00",
+   "last_success": "2026-10-22T14:32+02:00",
    "first": "2026-10-22",
    "last": "2027-11-17",
-   "sold_out": 7,
+   "sold_out": 8,
    "with_image": 0
   },
   "volkstheater": {
@@ -197,9 +197,9 @@
     }
    ],
    "count": 2,
-   "seconds": 8.2,
+   "seconds": 7.9,
    "ok": true,
-   "last_success": "2026-10-22T06:37+02:00",
+   "last_success": "2026-10-22T14:32+02:00",
    "first": "2026-10-22",
    "last": "2026-10-23",
    "sold_out": 0,
@@ -234,7 +234,7 @@
     },
     {
      "url": "https://www.deutsches-theater.de/programm/",
-     "show_links": 125
+     "show_links": 126
     },
     {
      "url": "https://www.deutsches-theater.de/disney-der-gloeckner-von-notre-dame/",
@@ -439,7 +439,7 @@
     {
      "url": "https://www.deutsches-theater.de/ball-der-nationen/",
      "mode": "dates",
-     "dates": 3
+     "dates": 1
     },
     {
      "url": "https://www.deutsches-theater.de/gala-nacht-des-deutschen-fussballs/",
@@ -563,7 +563,7 @@
     },
     {
      "url": "https://www.deutsches-theater.de/",
-     "show_links": 13
+     "show_links": 12
     },
     {
      "url": "https://www.deutsches-theater.de/die-paepstin-das-musical/",
@@ -586,14 +586,14 @@
      "dates": 16
     }
    ],
-   "count": 232,
-   "seconds": 371.7,
+   "count": 230,
+   "seconds": 361.5,
    "ok": true,
-   "last_success": "2026-10-22T06:37+02:00",
+   "last_success": "2026-10-22T14:32+02:00",
    "first": "2026-10-22",
    "last": "2027-11-23",
    "sold_out": 0,
-   "with_image": 232
+   "with_image": 230
   },
   "isarphilharmonie": {
    "name": "Isarphilharmonie",
@@ -622,9 +622,9 @@
     }
    ],
    "count": 24,
-   "seconds": 9.3,
+   "seconds": 8.5,
    "ok": true,
-   "last_success": "2026-10-22T06:37+02:00",
+   "last_success": "2026-10-22T14:32+02:00",
    "first": "2026-10-23",
    "last": "2026-11-18",
    "sold_out": 0,
@@ -650,7 +650,7 @@
     }
    ],
    "count": 0,
-   "seconds": 2.7,
+   "seconds": 2.5,
    "ok": false,
    "last_success": null,
    "kept_previous": 0
@@ -689,10 +689,10 @@
     {
      "url": "https://www.museum-lichtspiele.de/",
      "context": null,
-     "film_links": 30,
-     "blocks": 29,
+     "film_links": 28,
+     "blocks": 27,
      "screenings": 11,
-     "undated_times": 12,
+     "undated_times": 11,
      "events": 11
     },
     {
@@ -701,9 +701,9 @@
     }
    ],
    "count": 215,
-   "seconds": 17.7,
+   "seconds": 16.9,
    "ok": true,
-   "last_success": "2026-10-22T06:37+02:00",
+   "last_success": "2026-10-22T14:32+02:00",
    "first": "2026-10-22",
    "last": "2027-01-09",
    "sold_out": 0,
@@ -724,7 +724,7 @@
    "errors": [],
    "stats": [
     {
-     "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-22&tab=daily&sessionsExpanded=&film=naza",
+     "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-22&tab=daily&sessionsExpanded=&film=moscas-fliegen-und-andere-gaste",
      "context": null,
      "film_links": 41,
      "blocks": 19,
@@ -733,18 +733,18 @@
      "events": 10
     },
     {
-     "json_payloads": 10,
-     "json_events": 233
+     "json_payloads": 6,
+     "json_events": 204
     }
    ],
    "count": 152,
-   "seconds": 8.5,
+   "seconds": 7.7,
    "ok": true,
-   "last_success": "2026-10-22T06:37+02:00",
+   "last_success": "2026-10-22T14:32+02:00",
    "first": "2026-10-22",
    "last": "2026-12-15",
    "sold_out": 0,
-   "with_image": 89
+   "with_image": 60
   }
  }
 }
