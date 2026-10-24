@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T04:44:38+00:00",
+ "generated_at": "2026-10-24T04:43:21+00:00",
  "venues": {
   "residenztheater": {
    "name": "Residenztheater",
@@ -18,24 +18,24 @@
     {
      "url": "https://www.residenztheater.de/spielplan",
      "context": null,
-     "anchors": 16,
-     "cards": 16,
+     "anchors": 14,
+     "cards": 14,
      "no_date": 0,
      "no_time": 0,
      "no_title": 0,
      "pattern": "calendarics\\.ics\\?.*?activity(?:%5D|\\])?=(\\d+)",
-     "events": 16
+     "events": 14
     },
     {
      "url": "https://www.residenztheater.de/spielplan?month=2026-10&cHash=7630e6566b28d541512ed3aa12ba7b29",
      "context": null,
-     "anchors": 16,
-     "cards": 16,
+     "anchors": 14,
+     "cards": 14,
      "no_date": 0,
      "no_time": 0,
      "no_title": 0,
      "pattern": "calendarics\\.ics\\?.*?activity(?:%5D|\\])?=(\\d+)",
-     "events": 16
+     "events": 14
     },
     {
      "url": "https://www.residenztheater.de/spielplan?month=2026-11&cHash=50e34a17963e7f2baea7a1e33d4934de",
@@ -51,13 +51,13 @@
     {
      "url": "https://www.residenztheater.de/spielplan?month=2026-12&cHash=978a8caafa88da6426c2d6904eb0119c",
      "context": null,
-     "anchors": 130,
-     "cards": 67,
+     "anchors": 134,
+     "cards": 69,
      "no_date": 0,
      "no_time": 0,
      "no_title": 0,
      "pattern": "calendarics\\.ics\\?.*?activity(?:%5D|\\])?=(\\d+)",
-     "events": 67
+     "events": 69
     },
     {
      "url": "https://www.residenztheater.de/spielplan?month=2027-01&cHash=d4d95b4b795ca29d274008d1a803923b",
@@ -127,12 +127,12 @@
     }
    ],
    "count": 156,
-   "seconds": 42.0,
+   "seconds": 43.3,
    "ok": true,
-   "last_success": "2026-10-23T06:37+02:00",
-   "first": "2026-10-23",
+   "last_success": "2026-10-24T06:35+02:00",
+   "first": "2026-10-24",
    "last": "2027-06-19",
-   "sold_out": 12,
+   "sold_out": 14,
    "with_image": 0
   },
   "kammerspiele": {
@@ -152,22 +152,22 @@
     {
      "url": "https://www.muenchner-kammerspiele.de/de/programm/",
      "context": null,
-     "anchors": 334,
-     "cards": 334,
-     "no_date": 12,
-     "no_time": 40,
+     "anchors": 370,
+     "cards": 370,
+     "no_date": 8,
+     "no_time": 38,
      "no_title": 0,
      "pattern": "/programm/\\d+-[^/?#]+/(\\d+)\\.ics",
-     "events": 282
+     "events": 324
     }
    ],
-   "count": 141,
-   "seconds": 12.2,
+   "count": 157,
+   "seconds": 11.4,
    "ok": true,
-   "last_success": "2026-10-23T06:37+02:00",
-   "first": "2026-10-23",
+   "last_success": "2026-10-24T06:35+02:00",
+   "first": "2026-10-24",
    "last": "2027-11-17",
-   "sold_out": 6,
+   "sold_out": 7,
    "with_image": 0
   },
   "volkstheater": {
@@ -197,10 +197,10 @@
     }
    ],
    "count": 2,
-   "seconds": 7.6,
+   "seconds": 7.3,
    "ok": true,
-   "last_success": "2026-10-23T06:37+02:00",
-   "first": "2026-10-23",
+   "last_success": "2026-10-24T06:35+02:00",
+   "first": "2026-10-24",
    "last": "2026-10-24",
    "sold_out": 0,
    "with_image": 0
@@ -234,17 +234,12 @@
     },
     {
      "url": "https://www.deutsches-theater.de/programm/",
-     "show_links": 127
+     "show_links": 126
     },
     {
      "url": "https://www.deutsches-theater.de/disney-der-gloeckner-von-notre-dame/",
      "mode": "range+weekly",
-     "dates": 18
-    },
-    {
-     "url": "https://www.deutsches-theater.de/gypsy-jazz-tage-23102026/",
-     "mode": "dates",
-     "dates": 1
+     "dates": 17
     },
     {
      "url": "https://www.deutsches-theater.de/gypsy-jazz-tage-24102026/",
@@ -557,6 +552,11 @@
      "dates": 16
     },
     {
+     "url": "https://www.deutsches-theater.de/helmut-schleich/",
+     "mode": "dates",
+     "dates": 1
+    },
+    {
      "url": "https://www.deutsches-theater.de/",
      "context": null,
      "events": 0
@@ -573,7 +573,7 @@
     {
      "url": "https://www.deutsches-theater.de/disney-der-gloeckner-von-notre-dame/",
      "mode": "range+weekly",
-     "dates": 18
+     "dates": 17
     },
     {
      "url": "https://www.deutsches-theater.de/kiss-forever-band/",
@@ -586,14 +586,14 @@
      "dates": 16
     }
    ],
-   "count": 229,
-   "seconds": 343.4,
+   "count": 228,
+   "seconds": 354.2,
    "ok": true,
-   "last_success": "2026-10-23T06:37+02:00",
-   "first": "2026-10-23",
+   "last_success": "2026-10-24T06:35+02:00",
+   "first": "2026-10-24",
    "last": "2027-11-23",
    "sold_out": 0,
-   "with_image": 229
+   "with_image": 228
   },
   "isarphilharmonie": {
    "name": "Isarphilharmonie",
@@ -622,11 +622,11 @@
     }
    ],
    "count": 24,
-   "seconds": 7.9,
+   "seconds": 8.2,
    "ok": true,
-   "last_success": "2026-10-23T06:37+02:00",
-   "first": "2026-10-23",
-   "last": "2026-11-18",
+   "last_success": "2026-10-24T06:35+02:00",
+   "first": "2026-10-24",
+   "last": "2026-11-19",
    "sold_out": 0,
    "with_image": 24
   },
@@ -650,7 +650,7 @@
     }
    ],
    "count": 0,
-   "seconds": 2.4,
+   "seconds": 2.6,
    "ok": false,
    "last_success": null,
    "kept_previous": 0
@@ -682,32 +682,32 @@
      "context": null,
      "film_links": 60,
      "blocks": 30,
-     "screenings": 278,
+     "screenings": 240,
      "undated_times": 0,
-     "events": 278
+     "events": 240
     },
     {
      "url": "https://www.museum-lichtspiele.de/",
      "context": null,
-     "film_links": 34,
-     "blocks": 33,
+     "film_links": 36,
+     "blocks": 35,
      "screenings": 11,
      "undated_times": 16,
      "events": 11
     },
     {
      "json_payloads": 4,
-     "json_events": 139
+     "json_events": 120
     }
    ],
-   "count": 198,
-   "seconds": 17.3,
+   "count": 181,
+   "seconds": 16.8,
    "ok": true,
-   "last_success": "2026-10-23T06:37+02:00",
-   "first": "2026-10-23",
+   "last_success": "2026-10-24T06:35+02:00",
+   "first": "2026-10-24",
    "last": "2027-01-09",
    "sold_out": 0,
-   "with_image": 198
+   "with_image": 181
   },
   "city-kino-atelier": {
    "name": "City Kinos & Atelier",
@@ -724,27 +724,27 @@
    "errors": [],
    "stats": [
     {
-     "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-23&tab=daily&sessionsExpanded=&film=moscas-fliegen-und-andere-gaste",
+     "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-24&tab=daily&sessionsExpanded=&film=moscas-fliegen-und-andere-gaste",
      "context": null,
-     "film_links": 41,
-     "blocks": 19,
+     "film_links": 44,
+     "blocks": 20,
      "screenings": 11,
-     "undated_times": 5,
+     "undated_times": 6,
      "events": 11
     },
     {
-     "json_payloads": 10,
-     "json_events": 207
+     "json_payloads": 11,
+     "json_events": 165
     }
    ],
-   "count": 136,
-   "seconds": 7.3,
+   "count": 121,
+   "seconds": 7.6,
    "ok": true,
-   "last_success": "2026-10-23T06:37+02:00",
-   "first": "2026-10-23",
+   "last_success": "2026-10-24T06:35+02:00",
+   "first": "2026-10-24",
    "last": "2026-12-15",
    "sold_out": 0,
-   "with_image": 78
+   "with_image": 53
   }
  }
 }
