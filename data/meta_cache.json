@@ -2174,5 +2174,73 @@
 "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-26&tab=daily&sessionsExpanded=&film=free-at-heart": {
 "image": "https://images.ctfassets.net/4mws6uyas4ta/SZfkHAvlTKBr0uwUtYdj6/24decd92e6067e9391203008245cd0c5/Open_Graph_Images_2.jpg",
 "description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München."
+},
+"https://www.city-kinos.de/_next/data/UyCQCaU3FqwiUDf4GKgO3/de/filme/alte-liebe.json?id=alte-liebe": {
+"image": "https://www.city-kinos.de/_next/data/UyCQCaU3FqwiUDf4GKgO3/de/filme/alte-liebe.json?id=alte-liebe",
+"description": null
+},
+"https://www.city-kinos.de/_next/data/UyCQCaU3FqwiUDf4GKgO3/de/filme/chopin-eine-sonate-in-paris.json?id=chopin-eine-sonate-in-paris": {
+"image": "https://www.city-kinos.de/_next/data/UyCQCaU3FqwiUDf4GKgO3/de/filme/chopin-eine-sonate-in-paris.json?id=chopin-eine-sonate-in-paris",
+"description": null
+},
+"https://www.city-kinos.de/_next/data/UyCQCaU3FqwiUDf4GKgO3/de/filme/der-exorzist-directors-cut.json?id=der-exorzist-directors-cut": {
+"image": "https://www.city-kinos.de/_next/data/UyCQCaU3FqwiUDf4GKgO3/de/filme/der-exorzist-directors-cut.json?id=der-exorzist-directors-cut",
+"description": null
+},
+"https://www.city-kinos.de/_next/data/UyCQCaU3FqwiUDf4GKgO3/de/filme/digger.json?id=digger": {
+"image": "https://www.city-kinos.de/_next/data/UyCQCaU3FqwiUDf4GKgO3/de/filme/digger.json?id=digger",
+"description": null
+},
+"https://www.city-kinos.de/_next/data/UyCQCaU3FqwiUDf4GKgO3/de/filme/frau-winkler-verlasst-das-haus.json?id=frau-winkler-verlasst-das-haus": {
+"image": "https://www.city-kinos.de/_next/data/UyCQCaU3FqwiUDf4GKgO3/de/filme/frau-winkler-verlasst-das-haus.json?id=frau-winkler-verlasst-das-haus",
+"description": null
+},
+"https://www.city-kinos.de/_next/data/UyCQCaU3FqwiUDf4GKgO3/de/filme/liebhaberinnen.json?id=liebhaberinnen": {
+"image": "https://www.city-kinos.de/_next/data/UyCQCaU3FqwiUDf4GKgO3/de/filme/liebhaberinnen.json?id=liebhaberinnen",
+"description": null
+},
+"https://www.city-kinos.de/_next/data/UyCQCaU3FqwiUDf4GKgO3/de/filme/naza.json?id=naza": {
+"image": "https://www.city-kinos.de/_next/data/UyCQCaU3FqwiUDf4GKgO3/de/filme/naza.json?id=naza",
+"description": null
+},
+"https://www.city-kinos.de/_next/data/UyCQCaU3FqwiUDf4GKgO3/de/filme/primetime.json?id=primetime": {
+"image": "https://www.city-kinos.de/_next/data/UyCQCaU3FqwiUDf4GKgO3/de/filme/primetime.json?id=primetime",
+"description": null
+},
+"https://www.city-kinos.de/_next/data/UyCQCaU3FqwiUDf4GKgO3/de/filme/sinn-und-sinnlichkeit-2026.json?id=sinn-und-sinnlichkeit-2026": {
+"image": "https://www.city-kinos.de/_next/data/UyCQCaU3FqwiUDf4GKgO3/de/filme/sinn-und-sinnlichkeit-2026.json?id=sinn-und-sinnlichkeit-2026",
+"description": null
+},
+"https://www.city-kinos.de/_next/data/UyCQCaU3FqwiUDf4GKgO3/de/filme/vaterland.json?id=vaterland": {
+"image": "https://www.city-kinos.de/_next/data/UyCQCaU3FqwiUDf4GKgO3/de/filme/vaterland.json?id=vaterland",
+"description": null
+},
+"https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-27&tab=daily&sessionsExpanded=&film=grosse-filme-auf-der-grossen-leinwand": {
+"image": "https://images.ctfassets.net/4mws6uyas4ta/SZfkHAvlTKBr0uwUtYdj6/24decd92e6067e9391203008245cd0c5/Open_Graph_Images_2.jpg",
+"description": "Finde Spielzeiten und Tickets für alle Filme, Specials und Highlights im Programm der City Kinos München."
+},
+"https://www.muenchner-volkstheater.de/programm/schauspiel/ein-volksfeind": {
+"image": "https://www.muenchner-volkstheater.de/sites/default/files/styles/page_16_9/public/event/main-image/2026-09/Motiv_EinVolksfeind%28c%29HAPPYLAND_REINER%20RIEDLER.png?h=5497f555&itok=nBcrHmhy",
+"description": "Ibsens Drama um den Arzt Stockmann, der sich gegen die Vertuschung eines Umweltskandals wehrt, verhandelt nicht zuletzt Fragen nach dem Wert der Wahrheit."
+},
+"https://www.muenchner-volkstheater.de/programm/schauspiel/offene-wunde": {
+"image": "https://www.muenchner-volkstheater.de/sites/default/files/styles/page_16_9/public/event/main-image/2025-04/Motiv%20Offene%20Wunde%20-%20%28c%29%20picture%20alliance%20%20dpa%20%20Peter%20Kneffel.jpg?h=0a3014b1&itok=vE6e4152",
+"description": "Tunay Önder und Christine Umpfenbach entwickeln basierend auf Gesprächen mit den Angehörigen des Attentats am OEZ einen Theaterabend, der vom Leben der Angehörigen und Opfer erzählt."
+},
+"https://www.museum-lichtspiele.de/detail/128781/Klara%20and%20the%20Sun": {
+"image": "https://cineprog.de/images/MJpics/headslider/128/128781.jpg?v=1788487094",
+"description": "Museum Lichtspiele - Lilienstrasse 2, 81669 München: Klara and the Sun | Aktuelles Kinoprogramm, Kino, Film- und Kino-Infos, Online-Tickets, News, Events und vieles mehr..."
+},
+"https://www.museum-lichtspiele.de/detail/129381/Mumbo%20Jumbo": {
+"image": "https://cineprog.de/images/MJpics/headslider/129/129381.jpg?v=1790473343",
+"description": "Museum Lichtspiele - Lilienstrasse 2, 81669 München: Mumbo Jumbo | Aktuelles Kinoprogramm, Kino, Film- und Kino-Infos, Online-Tickets, News, Events und vieles mehr..."
+},
+"https://www.museum-lichtspiele.de/detail/130414/By%20Any%20Means": {
+"image": "https://cineprog.de/images/MJpics/headslider/130/130414.jpg?v=1786153528",
+"description": "Museum Lichtspiele - Lilienstrasse 2, 81669 München: By Any Means | Aktuelles Kinoprogramm, Kino, Film- und Kino-Infos, Online-Tickets, News, Events und vieles mehr..."
+},
+"https://www.museum-lichtspiele.de/detail/75418/Das%20Geheimnis%20der%20gestohlenen%20Maske": {
+"image": "https://cineprog.de/images/MJpics/headslider/075/75418.jpg?v=1792203027",
+"description": "Museum Lichtspiele - Lilienstrasse 2, 81669 München: Das Geheimnis der gestohlenen Maske | Aktuelles Kinoprogramm, Kino, Film- und Kino-Infos, Online-Tickets, News, Events und vieles mehr..."
 }
 }
