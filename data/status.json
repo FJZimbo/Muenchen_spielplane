@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-27T04:45:42+00:00",
+ "generated_at": "2026-10-28T04:58:24+00:00",
  "venues": {
   "residenztheater": {
    "name": "Residenztheater",
@@ -127,12 +127,12 @@
     }
    ],
    "count": 150,
-   "seconds": 34.3,
+   "seconds": 44.7,
    "ok": true,
-   "last_success": "2026-10-27T05:37+01:00",
+   "last_success": "2026-10-28T05:49+01:00",
    "first": "2026-10-28",
    "last": "2027-06-19",
-   "sold_out": 17,
+   "sold_out": 16,
    "with_image": 0
   },
   "kammerspiele": {
@@ -152,20 +152,20 @@
     {
      "url": "https://www.muenchner-kammerspiele.de/de/programm/",
      "context": null,
-     "anchors": 354,
-     "cards": 354,
+     "anchors": 362,
+     "cards": 362,
      "no_date": 8,
      "no_time": 38,
      "no_title": 0,
      "pattern": "/programm/\\d+-[^/?#]+/(\\d+)\\.ics",
-     "events": 308
+     "events": 316
     }
    ],
-   "count": 149,
-   "seconds": 11.2,
+   "count": 153,
+   "seconds": 11.7,
    "ok": true,
-   "last_success": "2026-10-27T05:37+01:00",
-   "first": "2026-10-27",
+   "last_success": "2026-10-28T05:49+01:00",
+   "first": "2026-10-28",
    "last": "2027-11-17",
    "sold_out": 4,
    "with_image": 0
@@ -187,9 +187,9 @@
     {
      "url": "https://www.muenchner-volkstheater.de/programm/spielplan",
      "context": null,
-     "anchors": 110,
-     "cards": 109,
-     "no_date": 106,
+     "anchors": 108,
+     "cards": 107,
+     "no_date": 104,
      "no_time": 0,
      "no_title": 0,
      "pattern": "muenchner-volkstheater\\.de/programm/(?!spielplan)([a-z0-9-]+/[a-z0-9-]+)/?$",
@@ -199,9 +199,9 @@
    "count": 2,
    "seconds": 7.6,
    "ok": true,
-   "last_success": "2026-10-27T05:37+01:00",
-   "first": "2026-10-27",
-   "last": "2026-10-27",
+   "last_success": "2026-10-28T05:49+01:00",
+   "first": "2026-10-28",
+   "last": "2026-10-28",
    "sold_out": 0,
    "with_image": 0
   },
@@ -234,12 +234,12 @@
     },
     {
      "url": "https://www.deutsches-theater.de/programm/",
-     "show_links": 125
+     "show_links": 126
     },
     {
      "url": "https://www.deutsches-theater.de/disney-der-gloeckner-von-notre-dame/",
      "mode": "range+weekly",
-     "dates": 14
+     "dates": 13
     },
     {
      "url": "https://www.deutsches-theater.de/hot-stuff-jazzband/",
@@ -573,7 +573,7 @@
     {
      "url": "https://www.deutsches-theater.de/disney-der-gloeckner-von-notre-dame/",
      "mode": "range+weekly",
-     "dates": 14
+     "dates": 13
     },
     {
      "url": "https://www.deutsches-theater.de/kiss-forever-band/",
@@ -586,14 +586,14 @@
      "dates": 16
     }
    ],
-   "count": 229,
-   "seconds": 368.0,
+   "count": 228,
+   "seconds": 393.7,
    "ok": true,
-   "last_success": "2026-10-27T05:37+01:00",
-   "first": "2026-10-27",
+   "last_success": "2026-10-28T05:49+01:00",
+   "first": "2026-10-28",
    "last": "2027-11-23",
    "sold_out": 0,
-   "with_image": 229
+   "with_image": 228
   },
   "isarphilharmonie": {
    "name": "Isarphilharmonie",
@@ -622,9 +622,9 @@
     }
    ],
    "count": 24,
-   "seconds": 8.2,
+   "seconds": 8.7,
    "ok": true,
-   "last_success": "2026-10-27T05:37+01:00",
+   "last_success": "2026-10-28T05:49+01:00",
    "first": "2026-10-29",
    "last": "2026-11-21",
    "sold_out": 0,
@@ -650,7 +650,7 @@
     }
    ],
    "count": 0,
-   "seconds": 2.3,
+   "seconds": 2.5,
    "ok": false,
    "last_success": null,
    "kept_previous": 0
@@ -680,11 +680,11 @@
     {
      "url": "https://www.museum-lichtspiele.de/programm?filter=all",
      "context": null,
-     "film_links": 68,
-     "blocks": 34,
-     "screenings": 364,
+     "film_links": 66,
+     "blocks": 33,
+     "screenings": 334,
      "undated_times": 0,
-     "events": 364
+     "events": 334
     },
     {
      "url": "https://www.museum-lichtspiele.de/",
@@ -696,18 +696,18 @@
      "events": 11
     },
     {
-     "json_payloads": 3,
-     "json_events": 0
+     "json_payloads": 4,
+     "json_events": 167
     }
    ],
-   "count": 85,
-   "seconds": 17.2,
+   "count": 230,
+   "seconds": 17.7,
    "ok": true,
-   "last_success": "2026-10-27T05:37+01:00",
-   "first": "2026-10-27",
+   "last_success": "2026-10-28T05:49+01:00",
+   "first": "2026-10-28",
    "last": "2027-01-09",
    "sold_out": 0,
-   "with_image": 85
+   "with_image": 230
   },
   "city-kino-atelier": {
    "name": "City Kinos & Atelier",
@@ -724,27 +724,27 @@
    "errors": [],
    "stats": [
     {
-     "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-27&tab=daily&sessionsExpanded=&film=grosse-filme-auf-der-grossen-leinwand",
+     "url": "https://www.city-kinos.de/filme?sort=Popularity&date=2026-10-28&tab=daily&sessionsExpanded=&film=sinn-und-sinnlichkeit-2026",
      "context": null,
-     "film_links": 41,
-     "blocks": 19,
+     "film_links": 44,
+     "blocks": 20,
      "screenings": 10,
-     "undated_times": 5,
+     "undated_times": 7,
      "events": 10
     },
     {
-     "json_payloads": 12,
-     "json_events": 94
+     "json_payloads": 13,
+     "json_events": 252
     }
    ],
-   "count": 80,
-   "seconds": 8.0,
+   "count": 179,
+   "seconds": 8.7,
    "ok": true,
-   "last_success": "2026-10-27T05:37+01:00",
-   "first": "2026-10-27",
+   "last_success": "2026-10-28T05:49+01:00",
+   "first": "2026-10-28",
    "last": "2026-12-15",
    "sold_out": 0,
-   "with_image": 31
+   "with_image": 88
   }
  }
 }
